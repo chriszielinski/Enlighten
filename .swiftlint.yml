@@ -1,0 +1,9 @@
+included:
+  - Source
+
+excluded:
+  - Demo
+  - Carthage
+
+disabled_rules:
+  - file_length

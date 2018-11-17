@@ -1,0 +1,933 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1400245F219B74CE00890402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1400245E219B74CE00890402 /* Assets.xcassets */; };
+		140DF391219DD8DE00394D2F /* EnlightenKeyedSpotlightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DF390219DD8DE00394D2F /* EnlightenKeyedSpotlightController.swift */; };
+		140DF395219DE80E00394D2F /* EnlightenKeyedIris.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DF394219DE80E00394D2F /* EnlightenKeyedIris.swift */; };
+		140DF39A219E3D9E00394D2F /* followspot-shape-segmented-control.md in Resources */ = {isa = PBXBuildFile; fileRef = 140DF399219E3D9E00394D2F /* followspot-shape-segmented-control.md */; };
+		1422608B2183B80200F3C570 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 142260812183B80100F3C570 /* index.html */; };
+		1422609A2183B90F00F3C570 /* css in Resources */ = {isa = PBXBuildFile; fileRef = 142260992183B90E00F3C570 /* css */; };
+		1422609D2183B92A00F3C570 /* js in Resources */ = {isa = PBXBuildFile; fileRef = 1422609B2183B92900F3C570 /* js */; };
+		142260A12183B96A00F3C570 /* EnlightenDownView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1422607A2183B7B100F3C570 /* EnlightenDownView.bundle */; };
+		144241482199E58600D62BBE /* EnlightenError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144241472199E58600D62BBE /* EnlightenError.swift */; };
+		145C70A22191146500F96F4B /* EnlightenSpotlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145C70A12191146500F96F4B /* EnlightenSpotlight.swift */; };
+		145C70A5219114A300F96F4B /* EnlightenIris.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145C70A4219114A300F96F4B /* EnlightenIris.swift */; };
+		145C70A821911B0300F96F4B /* AnimatableSpotlightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145C70A721911B0300F96F4B /* AnimatableSpotlightView.swift */; };
+		145C70AB21911B5300F96F4B /* AnimatableSpotlightLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145C70AA21911B5300F96F4B /* AnimatableSpotlightLayer.swift */; };
+		14756FB8218E3E5E008FD7A3 /* custom-view.md in Resources */ = {isa = PBXBuildFile; fileRef = 14756FB7218E3E5E008FD7A3 /* custom-view.md */; };
+		147DC479218242190027500A /* Enlighten.h in Headers */ = {isa = PBXBuildFile; fileRef = 147DC477218242190027500A /* Enlighten.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		147DC4862182422C0027500A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147DC4852182422C0027500A /* AppDelegate.swift */; };
+		147DC4882182422C0027500A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147DC4872182422C0027500A /* ViewController.swift */; };
+		147DC48A2182422E0027500A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 147DC4892182422E0027500A /* Assets.xcassets */; };
+		147DC48D2182422E0027500A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147DC48B2182422E0027500A /* Main.storyboard */; };
+		147DC4942182428F0027500A /* EnlightenPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147DC4932182428F0027500A /* EnlightenPopover.swift */; };
+		147DC499218245110027500A /* Down.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 147DC498218244E00027500A /* Down.framework */; };
+		147DC49C218245330027500A /* Down.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 147DC498218244E00027500A /* Down.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		147DC4A0218249BE0027500A /* Enlighten.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 147DC474218242190027500A /* Enlighten.framework */; };
+		147DC4A1218249BE0027500A /* Enlighten.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 147DC474218242190027500A /* Enlighten.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		14804FAE218A117900F5F6D3 /* ColoredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14804FAD218A117900F5F6D3 /* ColoredView.swift */; };
+		1493130221934E3400C2671D /* AnimatedTyper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1493130121934E3400C2671D /* AnimatedTyper.swift */; };
+		14931304219350DA00C2671D /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14931303219350DA00C2671D /* CustomView.swift */; };
+		14931306219384AE00C2671D /* EnlightenPopoverDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14931305219384AE00C2671D /* EnlightenPopoverDelegate.swift */; };
+		14931308219392F500C2671D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14931307219392F500C2671D /* String.swift */; };
+		14C5E33A2187B10300D5380C /* NSAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C5E3392187B10300D5380C /* NSAppearance.swift */; };
+		14C5E33C2187B12000D5380C /* EnlightenDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C5E33B2187B12000D5380C /* EnlightenDownView.swift */; };
+		14C5E33E2187B13A00D5380C /* EnlightenPopoverContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C5E33D2187B13A00D5380C /* EnlightenPopoverContentViewController.swift */; };
+		14C5E3402187B15E00D5380C /* EnlightenHelpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C5E33F2187B15E00D5380C /* EnlightenHelpButton.swift */; };
+		14C5E3422187B17B00D5380C /* NSWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C5E3412187B17B00D5380C /* NSWindow.swift */; };
+		14C5E3442187B18D00D5380C /* NSRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C5E3432187B18D00D5380C /* NSRect.swift */; };
+		14C5E3462187B19B00D5380C /* NSScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C5E3452187B19B00D5380C /* NSScreen.swift */; };
+		14C5E3492187B1C000D5380C /* Quadrant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C5E3482187B1C000D5380C /* Quadrant.swift */; };
+		14C5E34B2187B7A300D5380C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C5E34A2187B7A300D5380C /* Constants.swift */; };
+		14C5E3662187E12300D5380C /* EnlightenSpotlightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C5E3652187E12300D5380C /* EnlightenSpotlightController.swift */; };
+		14CEE57521A06F98006820F9 /* enlighten-help-button.md in Resources */ = {isa = PBXBuildFile; fileRef = 140DF39B219E418300394D2F /* enlighten-help-button.md */; };
+		14CEE57721A09192006820F9 /* introduction.md in Resources */ = {isa = PBXBuildFile; fileRef = 14CEE57621A09192006820F9 /* introduction.md */; };
+		14CEE57921A0B660006820F9 /* EnlightenIrisStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CEE57821A0B660006820F9 /* EnlightenIrisStage.swift */; };
+		14D0F1CB2188AE3200817C7D /* NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D0F1CA2188AE3200817C7D /* NSView.swift */; };
+		14D0F1CD2188B2DD00817C7D /* NSRectEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D0F1CC2188B2DD00817C7D /* NSRectEdge.swift */; };
+		14D0F1CF2188B90900817C7D /* NSColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D0F1CE2188B90900817C7D /* NSColor.swift */; };
+		14D2BDF82198D96200C679F1 /* EnlightenSpotlightControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D2BDF72198D96200C679F1 /* EnlightenSpotlightControllerDelegate.swift */; };
+		14E5AA19219C9CCA00797443 /* EnlightenSpotlightControllerKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E5AA18219C9CCA00797443 /* EnlightenSpotlightControllerKeys.swift */; };
+		14F5FF342194985000054F83 /* Resettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F5FF332194985000054F83 /* Resettable.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1422609F2183B95800F3C570 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 147DC46B218242190027500A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 142260792183B7B100F3C570;
+			remoteInfo = SchoolBusDownView;
+		};
+		147DC49E2182498F0027500A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 147DC46B218242190027500A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 147DC473218242190027500A;
+			remoteInfo = "School Bus";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		147DC49B2182451D0027500A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				147DC49C218245330027500A /* Down.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147DC4A2218249BF0027500A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				147DC4A1218249BE0027500A /* Enlighten.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1400245E219B74CE00890402 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		140DF390219DD8DE00394D2F /* EnlightenKeyedSpotlightController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnlightenKeyedSpotlightController.swift; sourceTree = "<group>"; };
+		140DF394219DE80E00394D2F /* EnlightenKeyedIris.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnlightenKeyedIris.swift; sourceTree = "<group>"; };
+		140DF399219E3D9E00394D2F /* followspot-shape-segmented-control.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "followspot-shape-segmented-control.md"; sourceTree = "<group>"; };
+		140DF39B219E418300394D2F /* enlighten-help-button.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "enlighten-help-button.md"; sourceTree = "<group>"; };
+		1422607A2183B7B100F3C570 /* EnlightenDownView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnlightenDownView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		1422607C2183B7B100F3C570 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		142260812183B80100F3C570 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		142260992183B90E00F3C570 /* css */ = {isa = PBXFileReference; lastKnownFileType = folder; path = css; sourceTree = "<group>"; };
+		1422609B2183B92900F3C570 /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; path = js; sourceTree = "<group>"; };
+		144241472199E58600D62BBE /* EnlightenError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnlightenError.swift; sourceTree = "<group>"; };
+		145C70A12191146500F96F4B /* EnlightenSpotlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnlightenSpotlight.swift; sourceTree = "<group>"; };
+		145C70A4219114A300F96F4B /* EnlightenIris.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnlightenIris.swift; sourceTree = "<group>"; };
+		145C70A721911B0300F96F4B /* AnimatableSpotlightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableSpotlightView.swift; sourceTree = "<group>"; };
+		145C70AA21911B5300F96F4B /* AnimatableSpotlightLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableSpotlightLayer.swift; sourceTree = "<group>"; };
+		14756FB7218E3E5E008FD7A3 /* custom-view.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "custom-view.md"; sourceTree = "<group>"; };
+		147DC474218242190027500A /* Enlighten.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Enlighten.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		147DC477218242190027500A /* Enlighten.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Enlighten.h; sourceTree = "<group>"; };
+		147DC478218242190027500A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		147DC4832182422C0027500A /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		147DC4852182422C0027500A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		147DC4872182422C0027500A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		147DC4892182422E0027500A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		147DC48C2182422E0027500A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		147DC48E2182422E0027500A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		147DC48F2182422E0027500A /* Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Demo.entitlements; sourceTree = "<group>"; };
+		147DC4932182428F0027500A /* EnlightenPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnlightenPopover.swift; sourceTree = "<group>"; };
+		147DC498218244E00027500A /* Down.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Down.framework; path = Carthage/Build/Mac/Down.framework; sourceTree = "<group>"; };
+		14804FAD218A117900F5F6D3 /* ColoredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredView.swift; sourceTree = "<group>"; };
+		1493130121934E3400C2671D /* AnimatedTyper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTyper.swift; sourceTree = "<group>"; };
+		14931303219350DA00C2671D /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		14931305219384AE00C2671D /* EnlightenPopoverDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnlightenPopoverDelegate.swift; sourceTree = "<group>"; };
+		14931307219392F500C2671D /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		14C5E3392187B10300D5380C /* NSAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAppearance.swift; sourceTree = "<group>"; };
+		14C5E33B2187B12000D5380C /* EnlightenDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnlightenDownView.swift; sourceTree = "<group>"; };
+		14C5E33D2187B13A00D5380C /* EnlightenPopoverContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnlightenPopoverContentViewController.swift; sourceTree = "<group>"; };
+		14C5E33F2187B15E00D5380C /* EnlightenHelpButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnlightenHelpButton.swift; sourceTree = "<group>"; };
+		14C5E3412187B17B00D5380C /* NSWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSWindow.swift; sourceTree = "<group>"; };
+		14C5E3432187B18D00D5380C /* NSRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSRect.swift; sourceTree = "<group>"; };
+		14C5E3452187B19B00D5380C /* NSScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSScreen.swift; sourceTree = "<group>"; };
+		14C5E3482187B1C000D5380C /* Quadrant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quadrant.swift; sourceTree = "<group>"; };
+		14C5E34A2187B7A300D5380C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		14C5E3652187E12300D5380C /* EnlightenSpotlightController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnlightenSpotlightController.swift; sourceTree = "<group>"; };
+		14CEE57621A09192006820F9 /* introduction.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = introduction.md; sourceTree = "<group>"; };
+		14CEE57821A0B660006820F9 /* EnlightenIrisStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnlightenIrisStage.swift; sourceTree = "<group>"; };
+		14D0F1CA2188AE3200817C7D /* NSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSView.swift; sourceTree = "<group>"; };
+		14D0F1CC2188B2DD00817C7D /* NSRectEdge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSRectEdge.swift; sourceTree = "<group>"; };
+		14D0F1CE2188B90900817C7D /* NSColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSColor.swift; sourceTree = "<group>"; };
+		14D2BDF72198D96200C679F1 /* EnlightenSpotlightControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnlightenSpotlightControllerDelegate.swift; sourceTree = "<group>"; };
+		14E5AA18219C9CCA00797443 /* EnlightenSpotlightControllerKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnlightenSpotlightControllerKeys.swift; sourceTree = "<group>"; };
+		14F5FF332194985000054F83 /* Resettable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resettable.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		142260772183B7B100F3C570 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147DC471218242190027500A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				147DC499218245110027500A /* Down.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147DC4802182422C0027500A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				147DC4A0218249BE0027500A /* Enlighten.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		140DF392219DE7D900394D2F /* Keyed */ = {
+			isa = PBXGroup;
+			children = (
+				140DF394219DE80E00394D2F /* EnlightenKeyedIris.swift */,
+				140DF390219DD8DE00394D2F /* EnlightenKeyedSpotlightController.swift */,
+			);
+			path = Keyed;
+			sourceTree = "<group>";
+		};
+		140DF396219E3B5A00394D2F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				14931303219350DA00C2671D /* CustomView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		140DF397219E3B7900394D2F /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				1493130121934E3400C2671D /* AnimatedTyper.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		140DF398219E3BA400394D2F /* Markdown */ = {
+			isa = PBXGroup;
+			children = (
+				14756FB7218E3E5E008FD7A3 /* custom-view.md */,
+				140DF399219E3D9E00394D2F /* followspot-shape-segmented-control.md */,
+				140DF39B219E418300394D2F /* enlighten-help-button.md */,
+				14CEE57621A09192006820F9 /* introduction.md */,
+			);
+			path = Markdown;
+			sourceTree = "<group>";
+		};
+		1422607B2183B7B100F3C570 /* EnlightenDownView (Bundle) */ = {
+			isa = PBXGroup;
+			children = (
+				1422607C2183B7B100F3C570 /* Info.plist */,
+			);
+			path = "EnlightenDownView (Bundle)";
+			sourceTree = "<group>";
+		};
+		142260802183B80100F3C570 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				142260992183B90E00F3C570 /* css */,
+				142260812183B80100F3C570 /* index.html */,
+				1422609B2183B92900F3C570 /* js */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		143644E621A0C59D0092BCB4 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				14C5E33D2187B13A00D5380C /* EnlightenPopoverContentViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		145C70A32191149900F96F4B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				145C70A4219114A300F96F4B /* EnlightenIris.swift */,
+				14CEE57821A0B660006820F9 /* EnlightenIrisStage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		145C70A621911AAE00F96F4B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				145C70A721911B0300F96F4B /* AnimatableSpotlightView.swift */,
+				14804FAD218A117900F5F6D3 /* ColoredView.swift */,
+				14C5E33B2187B12000D5380C /* EnlightenDownView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		145C70A921911B4200F96F4B /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				145C70AA21911B5300F96F4B /* AnimatableSpotlightLayer.swift */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
+		147DC46A218242190027500A = {
+			isa = PBXGroup;
+			children = (
+				147DC476218242190027500A /* Source */,
+				147DC4842182422C0027500A /* Demo */,
+				1422607B2183B7B100F3C570 /* EnlightenDownView (Bundle) */,
+				147DC496218244D00027500A /* Frameworks */,
+				147DC475218242190027500A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		147DC475218242190027500A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				147DC474218242190027500A /* Enlighten.framework */,
+				147DC4832182422C0027500A /* Demo.app */,
+				1422607A2183B7B100F3C570 /* EnlightenDownView.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		147DC476218242190027500A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1400245E219B74CE00890402 /* Assets.xcassets */,
+				14C5E34A2187B7A300D5380C /* Constants.swift */,
+				147DC477218242190027500A /* Enlighten.h */,
+				14C5E33F2187B15E00D5380C /* EnlightenHelpButton.swift */,
+				147DC4932182428F0027500A /* EnlightenPopover.swift */,
+				14C5E3652187E12300D5380C /* EnlightenSpotlightController.swift */,
+				14C5E3472187B1B300D5380C /* Enumerations */,
+				14C5E3382187B0F700D5380C /* Extensions */,
+				147DC478218242190027500A /* Info.plist */,
+				140DF392219DE7D900394D2F /* Keyed */,
+				145C70A921911B4200F96F4B /* Layers */,
+				145C70A32191149900F96F4B /* Models */,
+				14D68EF62190B2F1006FC28E /* Protocols */,
+				143644E621A0C59D0092BCB4 /* View Controllers */,
+				145C70A621911AAE00F96F4B /* Views */,
+				142260802183B80100F3C570 /* Web */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		147DC4842182422C0027500A /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				140DF398219E3BA400394D2F /* Markdown */,
+				140DF396219E3B5A00394D2F /* Views */,
+				147DC4852182422C0027500A /* AppDelegate.swift */,
+				147DC4872182422C0027500A /* ViewController.swift */,
+				140DF397219E3B7900394D2F /* Animations */,
+				147DC4892182422E0027500A /* Assets.xcassets */,
+				147DC48B2182422E0027500A /* Main.storyboard */,
+				147DC48E2182422E0027500A /* Info.plist */,
+				147DC48F2182422E0027500A /* Demo.entitlements */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		147DC496218244D00027500A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				147DC498218244E00027500A /* Down.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		14C5E3382187B0F700D5380C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				14C5E3392187B10300D5380C /* NSAppearance.swift */,
+				14D0F1CE2188B90900817C7D /* NSColor.swift */,
+				14C5E3432187B18D00D5380C /* NSRect.swift */,
+				14D0F1CC2188B2DD00817C7D /* NSRectEdge.swift */,
+				14C5E3452187B19B00D5380C /* NSScreen.swift */,
+				14D0F1CA2188AE3200817C7D /* NSView.swift */,
+				14C5E3412187B17B00D5380C /* NSWindow.swift */,
+				14931307219392F500C2671D /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		14C5E3472187B1B300D5380C /* Enumerations */ = {
+			isa = PBXGroup;
+			children = (
+				144241472199E58600D62BBE /* EnlightenError.swift */,
+				14C5E3482187B1C000D5380C /* Quadrant.swift */,
+			);
+			path = Enumerations;
+			sourceTree = "<group>";
+		};
+		14D68EF62190B2F1006FC28E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				14931305219384AE00C2671D /* EnlightenPopoverDelegate.swift */,
+				145C70A12191146500F96F4B /* EnlightenSpotlight.swift */,
+				14D2BDF72198D96200C679F1 /* EnlightenSpotlightControllerDelegate.swift */,
+				14E5AA18219C9CCA00797443 /* EnlightenSpotlightControllerKeys.swift */,
+				14F5FF332194985000054F83 /* Resettable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		147DC46F218242190027500A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				147DC479218242190027500A /* Enlighten.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		142260792183B7B100F3C570 /* EnlightenDownView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1422607D2183B7B100F3C570 /* Build configuration list for PBXNativeTarget "EnlightenDownView" */;
+			buildPhases = (
+				142260762183B7B100F3C570 /* Sources */,
+				142260772183B7B100F3C570 /* Frameworks */,
+				142260782183B7B100F3C570 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EnlightenDownView;
+			productName = SchoolBusDownView;
+			productReference = 1422607A2183B7B100F3C570 /* EnlightenDownView.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		147DC473218242190027500A /* Enlighten */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 147DC47C218242190027500A /* Build configuration list for PBXNativeTarget "Enlighten" */;
+			buildPhases = (
+				147DC46F218242190027500A /* Headers */,
+				147DC470218242190027500A /* Sources */,
+				147DC471218242190027500A /* Frameworks */,
+				147DC472218242190027500A /* Resources */,
+				147DC49B2182451D0027500A /* Embed Frameworks */,
+				144241492199F7F900D62BBE /* Run SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				142260A02183B95800F3C570 /* PBXTargetDependency */,
+			);
+			name = Enlighten;
+			productName = "School Bus";
+			productReference = 147DC474218242190027500A /* Enlighten.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		147DC4822182422C0027500A /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 147DC4902182422E0027500A /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				147DC47F2182422C0027500A /* Sources */,
+				147DC4802182422C0027500A /* Frameworks */,
+				147DC4812182422C0027500A /* Resources */,
+				147DC4A2218249BF0027500A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				147DC49F2182498F0027500A /* PBXTargetDependency */,
+			);
+			name = Demo;
+			productName = Demo;
+			productReference = 147DC4832182422C0027500A /* Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		147DC46B218242190027500A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Big Z Labs";
+				TargetAttributes = {
+					142260792183B7B100F3C570 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					147DC473218242190027500A = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+					};
+					147DC4822182422C0027500A = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 147DC46E218242190027500A /* Build configuration list for PBXProject "Enlighten" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 147DC46A218242190027500A;
+			productRefGroup = 147DC475218242190027500A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				147DC473218242190027500A /* Enlighten */,
+				147DC4822182422C0027500A /* Demo */,
+				142260792183B7B100F3C570 /* EnlightenDownView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		142260782183B7B100F3C570 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1422609D2183B92A00F3C570 /* js in Resources */,
+				1422609A2183B90F00F3C570 /* css in Resources */,
+				1422608B2183B80200F3C570 /* index.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147DC472218242190027500A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1400245F219B74CE00890402 /* Assets.xcassets in Resources */,
+				142260A12183B96A00F3C570 /* EnlightenDownView.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147DC4812182422C0027500A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14CEE57721A09192006820F9 /* introduction.md in Resources */,
+				14756FB8218E3E5E008FD7A3 /* custom-view.md in Resources */,
+				14CEE57521A06F98006820F9 /* enlighten-help-button.md in Resources */,
+				147DC48A2182422E0027500A /* Assets.xcassets in Resources */,
+				147DC48D2182422E0027500A /* Main.storyboard in Resources */,
+				140DF39A219E3D9E00394D2F /* followspot-shape-segmented-control.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		144241492199F7F900D62BBE /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		142260762183B7B100F3C570 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147DC470218242190027500A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14F5FF342194985000054F83 /* Resettable.swift in Sources */,
+				14D2BDF82198D96200C679F1 /* EnlightenSpotlightControllerDelegate.swift in Sources */,
+				14C5E33A2187B10300D5380C /* NSAppearance.swift in Sources */,
+				145C70AB21911B5300F96F4B /* AnimatableSpotlightLayer.swift in Sources */,
+				14C5E33C2187B12000D5380C /* EnlightenDownView.swift in Sources */,
+				14C5E3462187B19B00D5380C /* NSScreen.swift in Sources */,
+				145C70A22191146500F96F4B /* EnlightenSpotlight.swift in Sources */,
+				14C5E3492187B1C000D5380C /* Quadrant.swift in Sources */,
+				140DF391219DD8DE00394D2F /* EnlightenKeyedSpotlightController.swift in Sources */,
+				14E5AA19219C9CCA00797443 /* EnlightenSpotlightControllerKeys.swift in Sources */,
+				14D0F1CF2188B90900817C7D /* NSColor.swift in Sources */,
+				14C5E3422187B17B00D5380C /* NSWindow.swift in Sources */,
+				14C5E34B2187B7A300D5380C /* Constants.swift in Sources */,
+				144241482199E58600D62BBE /* EnlightenError.swift in Sources */,
+				14931306219384AE00C2671D /* EnlightenPopoverDelegate.swift in Sources */,
+				14C5E33E2187B13A00D5380C /* EnlightenPopoverContentViewController.swift in Sources */,
+				14D0F1CB2188AE3200817C7D /* NSView.swift in Sources */,
+				147DC4942182428F0027500A /* EnlightenPopover.swift in Sources */,
+				14C5E3662187E12300D5380C /* EnlightenSpotlightController.swift in Sources */,
+				14D0F1CD2188B2DD00817C7D /* NSRectEdge.swift in Sources */,
+				14CEE57921A0B660006820F9 /* EnlightenIrisStage.swift in Sources */,
+				145C70A821911B0300F96F4B /* AnimatableSpotlightView.swift in Sources */,
+				140DF395219DE80E00394D2F /* EnlightenKeyedIris.swift in Sources */,
+				14804FAE218A117900F5F6D3 /* ColoredView.swift in Sources */,
+				14C5E3402187B15E00D5380C /* EnlightenHelpButton.swift in Sources */,
+				14931308219392F500C2671D /* String.swift in Sources */,
+				14C5E3442187B18D00D5380C /* NSRect.swift in Sources */,
+				145C70A5219114A300F96F4B /* EnlightenIris.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147DC47F2182422C0027500A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1493130221934E3400C2671D /* AnimatedTyper.swift in Sources */,
+				14931304219350DA00C2671D /* CustomView.swift in Sources */,
+				147DC4882182422C0027500A /* ViewController.swift in Sources */,
+				147DC4862182422C0027500A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		142260A02183B95800F3C570 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 142260792183B7B100F3C570 /* EnlightenDownView */;
+			targetProxy = 1422609F2183B95800F3C570 /* PBXContainerItemProxy */;
+		};
+		147DC49F2182498F0027500A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 147DC473218242190027500A /* Enlighten */;
+			targetProxy = 147DC49E2182498F0027500A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		147DC48B2182422E0027500A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				147DC48C2182422E0027500A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1422607E2183B7B100F3C570 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9V456WSURS;
+				INFOPLIST_FILE = "EnlightenDownView (Bundle)/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bigzlabs.EnlightenDownView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		1422607F2183B7B100F3C570 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9V456WSURS;
+				INFOPLIST_FILE = "EnlightenDownView (Bundle)/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bigzlabs.EnlightenDownView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		147DC47A218242190027500A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		147DC47B218242190027500A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		147DC47D218242190027500A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9V456WSURS;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"WKLOG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bigzlabs.Enlighten;
+				PRODUCT_NAME = Enlighten;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		147DC47E218242190027500A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9V456WSURS;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bigzlabs.Enlighten;
+				PRODUCT_NAME = Enlighten;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		147DC4912182422E0027500A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Demo/Demo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9V456WSURS;
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bigzlabs.Enlighten-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		147DC4922182422E0027500A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Demo/Demo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9V456WSURS;
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bigzlabs.Enlighten-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1422607D2183B7B100F3C570 /* Build configuration list for PBXNativeTarget "EnlightenDownView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1422607E2183B7B100F3C570 /* Debug */,
+				1422607F2183B7B100F3C570 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		147DC46E218242190027500A /* Build configuration list for PBXProject "Enlighten" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147DC47A218242190027500A /* Debug */,
+				147DC47B218242190027500A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		147DC47C218242190027500A /* Build configuration list for PBXNativeTarget "Enlighten" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147DC47D218242190027500A /* Debug */,
+				147DC47E218242190027500A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		147DC4902182422E0027500A /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147DC4912182422E0027500A /* Debug */,
+				147DC4922182422E0027500A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 147DC46B218242190027500A /* Project object */;
+}

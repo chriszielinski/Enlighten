@@ -7,6 +7,32 @@
 //
 
 import Cocoa
+import Down
+
+public extension NSView {
+    /// Sets the receiver's tool tip to the style-stripped Markdown string.
+    ///
+    /// - Parameter markdownString: The CommonMark Markdown string to use for the tool tip.
+    /// - Throws: A `DownErrors` error.
+    func enlightenToolTip(markdownString: String) throws {
+        guard !markdownString.isEmpty
+            else { return }
+
+        let attributedString = try Down(markdownString: markdownString).toAttributedString()
+        toolTip = attributedString.string.trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+
+    /// Sets the receiver's tool tip to the style-stripped Markdown content of a Markdown file.
+    ///
+    /// - Parameters:
+    ///   - markdownFilename: The name of the CommonMark Markdown file in the provided bundle to use for the tool tip.
+    ///   - bundle: The bundle that contains the Markdown file named `markdownFilename`.
+    /// - Throws: An error if the contents of the file `markdownName` cannot be read, and a `DownErrors` error if
+    ///           the CommonMark Markdown string fails to load.
+    func enlightenToolTip(markdownFilename: String, in bundle: Bundle) throws {
+        try enlightenToolTip(markdownString: try String(markdownFilename: markdownFilename, in: bundle))
+    }
+}
 
 extension NSView {
     /// Returns the receiver's frame in the receiver's window's coordinate system.
@@ -14,6 +40,7 @@ extension NSView {
         return convert(bounds, to: nil)
     }
 
+    /// An image whose alpha channel is used to mask the view's content.
     var maskImage: NSImage? {
         get { return layer?.mask?.contents as? NSImage }
         set {

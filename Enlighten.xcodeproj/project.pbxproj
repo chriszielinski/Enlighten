@@ -32,6 +32,7 @@
 		147DC4A0218249BE0027500A /* Enlighten.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 147DC474218242190027500A /* Enlighten.framework */; };
 		147DC4A1218249BE0027500A /* Enlighten.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 147DC474218242190027500A /* Enlighten.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		14804FAE218A117900F5F6D3 /* ColoredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14804FAD218A117900F5F6D3 /* ColoredView.swift */; };
+		148A647521A261A000089958 /* NSEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A647421A261A000089958 /* NSEvent.swift */; };
 		1493130221934E3400C2671D /* AnimatedTyper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1493130121934E3400C2671D /* AnimatedTyper.swift */; };
 		14931304219350DA00C2671D /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14931303219350DA00C2671D /* CustomView.swift */; };
 		14931306219384AE00C2671D /* EnlightenPopoverDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14931305219384AE00C2671D /* EnlightenPopoverDelegate.swift */; };
@@ -129,6 +130,7 @@
 		147DC4932182428F0027500A /* EnlightenPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnlightenPopover.swift; sourceTree = "<group>"; };
 		147DC498218244E00027500A /* Down.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Down.framework; path = Carthage/Build/Mac/Down.framework; sourceTree = "<group>"; };
 		14804FAD218A117900F5F6D3 /* ColoredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredView.swift; sourceTree = "<group>"; };
+		148A647421A261A000089958 /* NSEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSEvent.swift; sourceTree = "<group>"; };
 		1493130121934E3400C2671D /* AnimatedTyper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTyper.swift; sourceTree = "<group>"; };
 		14931303219350DA00C2671D /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		14931305219384AE00C2671D /* EnlightenPopoverDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnlightenPopoverDelegate.swift; sourceTree = "<group>"; };
@@ -347,6 +349,7 @@
 				14C5E3452187B19B00D5380C /* NSScreen.swift */,
 				14D0F1CA2188AE3200817C7D /* NSView.swift */,
 				14C5E3412187B17B00D5380C /* NSWindow.swift */,
+				148A647421A261A000089958 /* NSEvent.swift */,
 				14931307219392F500C2671D /* String.swift */,
 			);
 			path = Extensions;
@@ -575,6 +578,7 @@
 				14C5E34B2187B7A300D5380C /* Constants.swift in Sources */,
 				144241482199E58600D62BBE /* EnlightenError.swift in Sources */,
 				14931306219384AE00C2671D /* EnlightenPopoverDelegate.swift in Sources */,
+				148A647521A261A000089958 /* NSEvent.swift in Sources */,
 				14C5E33E2187B13A00D5380C /* EnlightenPopoverContentViewController.swift in Sources */,
 				14D0F1CB2188AE3200817C7D /* NSView.swift in Sources */,
 				147DC4942182428F0027500A /* EnlightenPopover.swift in Sources */,

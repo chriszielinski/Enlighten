@@ -12,16 +12,16 @@ import Enlighten
 class ViewController: NSViewController {
     /// Keys that define the presentation order of the keyed spotlight controller's irises. The keys can also be used for identification purposes.
     ///
-    /// The order of the keys' declarations corresponds directly to their presentation order (i.e. the iris with the `.presentButton` presentation order key will be first, followed by `.usesProfileSpotButton`...).
+    /// The order of the keys' declarations corresponds directly to their presentation order (i.e. the iris with the `.presentButton` presentation order key will be first, followed by `.customView`...).
     enum SpotlightKeys: String, EnlightenSpotlightControllerKeys {
         // The controller will begin with the iris that corresponds to this key.
         case presentButton
-        case usesProfileSpotButton
-        case followspotShapeSegmentedControl
-        case enlightenHelpButton
-        case textView
-        // And finish with the iris that corresponds to this key.
         case customView
+        case usesProfileSpotButton
+        case textView
+        case followspotShapeSegmentedControl
+        // And finish with the iris that corresponds to this key.
+        case enlightenHelpButton
     }
 
     /// Represents a Markdown page in the `EnlightenHelpButton` popover.
@@ -226,6 +226,12 @@ class ViewController: NSViewController {
     }
 
     func setupViews() {
+        let visualEffectView = NSVisualEffectView(frame: view.frame)
+        visualEffectView.blendingMode = .behindWindow
+        visualEffectView.state = .active
+        visualEffectView.autoresizingMask = [.height, .width]
+        view.addSubview(visualEffectView, positioned: .below, relativeTo: nil)
+
         // Allow the help button's popover to detach.
         enlightenHelpButton.canDetachPopover = true
         // Set the popover delegate to ourself. The popover will notify the delegate (us) when/if the Markdown string fails to load, and when a Enlighten URL was clicked.
@@ -266,6 +272,8 @@ class ViewController: NSViewController {
     override func viewWillAppear() {
         super.viewWillAppear()
 
+        // IMPORTANT: Because we're using a `NSVisualEffectView` for the window background, we need to set the window's background color to clear. For some reason, CoreAnimation uses the window's background color during certain animations, like when animating a subview addition to the window's content view.
+        view.window!.backgroundColor = .clear
         // Present the onboarding.
         keyedSpotlightController.present(animating: false)
     }

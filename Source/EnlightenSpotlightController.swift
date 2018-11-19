@@ -258,6 +258,7 @@ open class EnlightenSpotlightController: NSViewController {
         isPresenting = true
 
         self.presentationWindow = presentationWindow
+
         imageMaskView.frame = contentView.bounds
         animatableSpotlightView.frame = contentView.bounds
 
@@ -541,7 +542,7 @@ public extension EnlightenSpotlightController {
         }
     }
 
-    /// The skipt button's action method.
+    /// The skip button's action method.
     @objc
     func skipButtonAction() {
         dismiss()
@@ -620,7 +621,7 @@ extension EnlightenSpotlightController {
                 // Did not animate the spotlight transition, so just animate the mask image change.
                 imageMaskView.maskImage = createProfileSpotImageMask(for: currentIris)
             } else if usesProfileSpot {
-                // Animate the change from spotlight mask to focused mask.
+                // Animate the change from spotlight mask to image mask.
                 addSubviewToContentViewBelowSkipButton(imageMaskView)
                 animatableSpotlightView.removeFromSuperview()
             }
@@ -856,24 +857,32 @@ extension EnlightenSpotlightController {
 extension EnlightenSpotlightController {
     @objc
     func ignoreEvent(_ event: NSEvent) -> NSEvent? {
-        guard event.window == presentationWindow
+        // Ignore all events for the popover.
+        guard event.window != popover.contentViewController?.view.window
+            else { return nil }
+
+        // Forward `.appKitDefined` event types and any events inside the window's title bar.
+        guard event.type != .appKitDefined,
+            !event.isMouseInsideTitleBar
             else { return event }
         return nil
     }
 
     @objc
     func handle(mouseDown event: NSEvent) -> NSEvent? {
-        /// Make sure the app is active.
+        // Make sure the app is active.
         guard NSApp.isActive else {
             NSApp.activate(ignoringOtherApps: true)
             return nil
         }
 
-        // Make sure the mouse down event is in the presentation window and not for the skip button.
-        // Otherwise, forward it.
-        guard event.window == presentationWindow,
-            skipButton.hitTest(event.locationInWindow) == nil
-            else { return event }
+        if event.window == presentationWindow {
+            // Make sure the mouse down event is not for the title bar, nor the window
+            // edge (drag), nor the skip button. Otherwise, forward it.
+            guard skipButton.hitTest(event.locationInWindow) == nil,
+                !event.isMouseInsideTitleBar
+                else { return event }
+        }
 
         if event.clickCount >= 2 {
             showSkipButton()

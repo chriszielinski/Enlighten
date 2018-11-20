@@ -7,13 +7,14 @@
 //
 
 import Foundation
+import Down
 
 /// A set of optional methods that Enlighten popover delegates can implement to receive events.
 @objc
 public protocol EnlightenPopoverDelegate: class {
     /// Invoked when a Markdown string fails to load, this method optionally returns a replacement.
     ///
-    /// - Parameter downError: The error that was thrown.
+    /// - Parameter downError: The `DownErrors` error that was thrown.
     /// - Returns: Optionally, a replacement Markdown string to use in place of the failed one.
     @objc
     optional func enlightenPopoverFailedToLoad(downError: Error) -> String?

@@ -64,7 +64,7 @@ open class EnlightenSpotlightController: NSViewController {
     /// Whether the spotlight focuses on the view.
     ///
     /// The spotlight _focus_ animation is the scaling of the spotlight iris on a particular view from a
-    /// followspot (wider) to a profile spot (tighter), or vice versa.
+    /// followspot (wider) to a profile spot (tighter).
     ///
     /// This property has a default value of `true`.
     ///
@@ -857,9 +857,13 @@ extension EnlightenSpotlightController {
 extension EnlightenSpotlightController {
     @objc
     func ignoreEvent(_ event: NSEvent) -> NSEvent? {
-        // Ignore all events for the popover.
+        // Ignore all events for the popover window.
         guard event.window != popover.contentViewController?.view.window
             else { return nil }
+
+        // Forward all events that don't belong to the presentation window.
+        guard event.window == presentationWindow
+            else { return event }
 
         // Forward `.appKitDefined` event types and any events inside the window's title bar.
         guard event.type != .appKitDefined,
@@ -872,8 +876,7 @@ extension EnlightenSpotlightController {
     func handle(mouseDown event: NSEvent) -> NSEvent? {
         // Make sure the app is active.
         guard NSApp.isActive else {
-            NSApp.activate(ignoringOtherApps: true)
-            return nil
+            return event
         }
 
         if event.window == presentationWindow {

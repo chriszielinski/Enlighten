@@ -8,7 +8,8 @@
 
 import Cocoa
 
-/// A help button that displays a popover with app-specific help rendered from a CommonMark Markdown string.
+/// A help button that displays a popover with app-specific help documentation rendered from a
+/// CommonMark Markdown string.
 open class EnlightenHelpButton: NSButton {
 
     // MARK: Public Stored Properties

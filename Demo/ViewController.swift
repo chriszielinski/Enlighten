@@ -238,7 +238,7 @@ class ViewController: NSViewController {
         enlightenHelpButton.enlightenPopoverDelegate = self
         // Set the Markdown string in the help button's popover.
         enlightenHelpButton.update(markdownString: helpButtonMainPageMarkdown)
-        // The help button's tool tip.
+        // The help button's tooltip Markdown content.
         let helpButtonToolTip = """
             # Need help?
 
@@ -246,7 +246,7 @@ class ViewController: NSViewController {
             """
         // You can use a Markdown string as a tool tip. The Markdown string will be stripped of any styling.
         // This can be useful if you want to use the same Markdown strings/files for the spotlight controller and tool tips.
-        try! enlightenHelpButton.enlightenToolTip(markdownString: helpButtonToolTip)
+        try! enlightenHelpButton.enlightenTooltip(markdownString: helpButtonToolTip)
 
         presentButton.target = self
         presentButton.action = #selector(startSpotlightOnboarding)

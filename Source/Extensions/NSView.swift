@@ -10,11 +10,11 @@ import Cocoa
 import Down
 
 public extension NSView {
-    /// Sets the receiver's tool tip to the style-stripped Markdown string.
+    /// Sets the receiver's tooltip to the style-stripped Markdown string.
     ///
-    /// - Parameter markdownString: The CommonMark Markdown string to use for the tool tip.
+    /// - Parameter markdownString: The CommonMark Markdown string to use for the tooltip.
     /// - Throws: A `DownErrors` error.
-    func enlightenToolTip(markdownString: String) throws {
+    func enlightenTooltip(markdownString: String) throws {
         guard !markdownString.isEmpty
             else { return }
 
@@ -22,15 +22,15 @@ public extension NSView {
         toolTip = attributedString.string.trimmingCharacters(in: .whitespacesAndNewlines)
     }
 
-    /// Sets the receiver's tool tip to the style-stripped Markdown content of a Markdown file.
+    /// Sets the receiver's tooltip to the style-stripped Markdown content of a Markdown file.
     ///
     /// - Parameters:
-    ///   - markdownFilename: The name of the CommonMark Markdown file in the provided bundle to use for the tool tip.
+    ///   - markdownFilename: The name of the CommonMark Markdown file in the provided bundle to use for the tooltip.
     ///   - bundle: The bundle that contains the Markdown file named `markdownFilename`.
     /// - Throws: An error if the contents of the file `markdownName` cannot be read, and a `DownErrors` error if
     ///           the CommonMark Markdown string fails to load.
-    func enlightenToolTip(markdownFilename: String, in bundle: Bundle) throws {
-        try enlightenToolTip(markdownString: try String(markdownFilename: markdownFilename, in: bundle))
+    func enlightenTooltip(markdownFilename: String, in bundle: Bundle) throws {
+        try enlightenTooltip(markdownString: try String(markdownFilename: markdownFilename, in: bundle))
     }
 }
 

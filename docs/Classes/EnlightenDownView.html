@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EnlightenDownView Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/EnlightenDownView" class="dashAnchor"></a>
+    <a title="EnlightenDownView Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (81% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        EnlightenDownView Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenDownView.html">EnlightenDownView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenHelpButton.html">EnlightenHelpButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenIris.html">EnlightenIris</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenIrisStage.html">EnlightenIrisStage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenKeyedIris.html">EnlightenKeyedIris</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenKeyedSpotlightController.html">EnlightenKeyedSpotlightController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenPopover.html">EnlightenPopover</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenPopoverContentViewController.html">EnlightenPopoverContentViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenSpotlightController.html">EnlightenSpotlightController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenSpotlightController/FollowspotShape.html">– FollowspotShape</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenSpotlightController/NavigationDirection.html">– NavigationDirection</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/EnlightenError.html">EnlightenError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Quadrant.html">Quadrant</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/NSColor.html">NSColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSRect.html">NSRect</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSRectEdge.html">NSRectEdge</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSScreen.html">NSScreen</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSView.html">NSView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSWindow.html">NSWindow</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/EnlightenPopoverDelegate.html">EnlightenPopoverDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EnlightenSpotlight.html">EnlightenSpotlight</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EnlightenSpotlightControllerDelegate.html">EnlightenSpotlightControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:9Enlighten0A23SpotlightControllerKeysP">EnlightenSpotlightControllerKeys</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/CSSConstants.html">CSSConstants</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CSSProperty.html">CSSProperty</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CSSPropertyValue.html">CSSPropertyValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CSSPropertyValue/TextAlign.html">– TextAlign</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Constants.html">Constants</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>EnlightenDownView</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">EnlightenDownView</span> <span class="p">:</span> <span class="kt">DownView</span></code></pre>
+
+                </div>
+              </div>
+            <p>A sizeable and self-fitting web view that renders a CommonMark Markdown string.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Stored%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Public Stored Properties" class="dashAnchor"></a>
+                <a href="#/Public%20Stored%20Properties">
+                  <h3 class="section-name">Public Stored Properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A8DownViewC25mouseDragShouldMoveWindowSbvp"></a>
+                    <a name="//apple_ref/swift/Property/mouseDragShouldMoveWindow" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A8DownViewC25mouseDragShouldMoveWindowSbvp">mouseDragShouldMoveWindow</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether a mouse drag event should move the window.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">internal(set)</span> <span class="k">var</span> <span class="nv">mouseDragShouldMoveWindow</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A8DownViewC8maxWidth12CoreGraphics7CGFloatVvp"></a>
+                    <a name="//apple_ref/swift/Property/maxWidth" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A8DownViewC8maxWidth12CoreGraphics7CGFloatVvp">maxWidth</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The maximum width the view can use.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">maxWidth</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A8DownViewC9maxHeight12CoreGraphics7CGFloatVvp"></a>
+                    <a name="//apple_ref/swift/Property/maxHeight" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A8DownViewC9maxHeight12CoreGraphics7CGFloatVvp">maxHeight</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The maximum height the view can use.</p>
+
+<p>If the Markdown content exceeds this height, scrolling is enabled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">maxHeight</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A8DownViewC9minHeight12CoreGraphics7CGFloatVvp"></a>
+                    <a name="//apple_ref/swift/Property/minHeight" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A8DownViewC9minHeight12CoreGraphics7CGFloatVvp">minHeight</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The minimum height the view can be.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    This is dependent on the CSS styling.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">minHeight</span><span class="p">:</span> <span class="kt">CGFloat</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A8DownViewC22doesCenterAlignContentSbvp"></a>
+                    <a name="//apple_ref/swift/Property/doesCenterAlignContent" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A8DownViewC22doesCenterAlignContentSbvp">doesCenterAlignContent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the Markdown content should be center aligned.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">doesCenterAlignContent</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A8DownViewC18isScrollingEnabledSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isScrollingEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A8DownViewC18isScrollingEnabledSbvp">isScrollingEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether document scrolling is enabled.</p>
+
+<p>This property is determined by the <code><a href="../Classes/EnlightenDownView.html#/s:9Enlighten0A8DownViewC9maxHeight12CoreGraphics7CGFloatVvp">maxHeight</a></code> property and the actual height of the rendered Markdown document.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">internal(set)</span> <span class="k">var</span> <span class="nv">isScrollingEnabled</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Enlighten@objc(cs)EnlightenDownView(py)isFinalWidth"></a>
+                    <a name="//apple_ref/swift/Property/isFinalWidth" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Enlighten@objc(cs)EnlightenDownView(py)isFinalWidth">isFinalWidth</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the final width of the HTML document has been determined.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">dynamic</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">isFinalWidth</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Overridden%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Overridden Properties" class="dashAnchor"></a>
+                <a href="#/Overridden%20Properties">
+                  <h3 class="section-name">Overridden Properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Enlighten@objc(cs)EnlightenDownView(py)intrinsicContentSize"></a>
+                    <a name="//apple_ref/swift/Property/intrinsicContentSize" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Enlighten@objc(cs)EnlightenDownView(py)intrinsicContentSize">intrinsicContentSize</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="k">var</span> <span class="nv">intrinsicContentSize</span><span class="p">:</span> <span class="kt">NSSize</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <a href="#/Initializers">
+                  <h3 class="section-name">Initializers</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A8DownViewC5frame14markdownString18openLinksInBrowser14templateBundle13configuration19didLoadSuccessfullyACSo6CGRectV_SSSbSo8NSBundleCSgSo05WKWebC13ConfigurationCSgyycSgtKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(frame:markdownString:openLinksInBrowser:templateBundle:configuration:didLoadSuccessfully:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A8DownViewC5frame14markdownString18openLinksInBrowser14templateBundle13configuration19didLoadSuccessfullyACSo6CGRectV_SSSbSo8NSBundleCSgSo05WKWebC13ConfigurationCSgyycSgtKcfc">init(frame:markdownString:openLinksInBrowser:templateBundle:configuration:didLoadSuccessfully:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="nf">init</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">,</span>
+                     <span class="nv">markdownString</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                     <span class="nv">openLinksInBrowser</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+                     <span class="nv">templateBundle</span><span class="p">:</span> <span class="kt">Bundle</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                     <span class="nv">configuration</span><span class="p">:</span> <span class="kt">WKWebViewConfiguration</span><span class="p">?,</span>
+                     <span class="nv">didLoadSuccessfully</span><span class="p">:</span> <span class="kt">DownViewClosure</span><span class="p">?)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Enlighten@objc(cs)EnlightenDownView(im)initWithCoder:"></a>
+                    <a name="//apple_ref/swift/Method/init(coder:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Enlighten@objc(cs)EnlightenDownView(im)initWithCoder:">init(coder:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">required</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">?(</span><span class="nv">coder</span><span class="p">:</span> <span class="kt">NSCoder</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Javascript%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Javascript Methods" class="dashAnchor"></a>
+                <a href="#/Javascript%20Methods">
+                  <h3 class="section-name">Javascript Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A8DownViewC18computeContentSizeyyF"></a>
+                    <a name="//apple_ref/swift/Method/computeContentSize()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A8DownViewC18computeContentSizeyyF">computeContentSize()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Computes and resizes the view to best fit the document&rsquo;s content size, respecting the minimum and maximum
+allowed size.</p>
+
+<p>This method updates the values of the <code>cachedContentSize</code> and <code><a href="../Classes/EnlightenDownView.html#/c:@M@Enlighten@objc(cs)EnlightenDownView(py)isFinalWidth">isFinalWidth</a></code> properties.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">computeContentSize</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A8DownViewC25cacheWidthOfWidestElementyyF"></a>
+                    <a name="//apple_ref/swift/Method/cacheWidthOfWidestElement()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A8DownViewC25cacheWidthOfWidestElementyyF">cacheWidthOfWidestElement()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates the <code>cachedWidestElementWidth</code> property.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">cacheWidthOfWidestElement</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A8DownViewC16setBodyTopMargin2toy12CoreGraphics7CGFloatV_tF"></a>
+                    <a name="//apple_ref/swift/Method/setBodyTopMargin(to:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A8DownViewC16setBodyTopMargin2toy12CoreGraphics7CGFloatV_tF">setBodyTopMargin(to:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the document body’s <code>margin-top</code> CSS property to a specified px value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">setBodyTopMargin</span><span class="p">(</span><span class="n">to</span> <span class="nv">pxValue</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A8DownViewC18resetBodyTopMarginyyF"></a>
+                    <a name="//apple_ref/swift/Method/resetBodyTopMargin()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A8DownViewC18resetBodyTopMarginyyF">resetBodyTopMargin()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes any previous values set by <code><a href="../Classes/EnlightenDownView.html#/s:9Enlighten0A8DownViewC16setBodyTopMargin2toy12CoreGraphics7CGFloatV_tF">setBodyTopMargin(to:)</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">resetBodyTopMargin</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A8DownViewC24setBodyTextAlignPropertyyyF"></a>
+                    <a name="//apple_ref/swift/Method/setBodyTextAlignProperty()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A8DownViewC24setBodyTextAlignPropertyyyF">setBodyTextAlignProperty()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the document body’s <code>text-align</code> CSS property to match the behavior of the
+<code><a href="../Classes/EnlightenDownView.html#/s:9Enlighten0A8DownViewC22doesCenterAlignContentSbvp">doesCenterAlignContent</a></code> property.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">setBodyTextAlignProperty</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A8DownViewC25setDocumentScrollPropertyyyF"></a>
+                    <a name="//apple_ref/swift/Method/setDocumentScrollProperty()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A8DownViewC25setDocumentScrollPropertyyyF">setDocumentScrollProperty()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the CSS overflow property to match the behavior of the <code><a href="../Classes/EnlightenDownView.html#/s:9Enlighten0A8DownViewC18isScrollingEnabledSbvp">isScrollingEnabled</a></code> property.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">setDocumentScrollProperty</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A8DownViewC23setPreferredColorSchemeyyF"></a>
+                    <a name="//apple_ref/swift/Method/setPreferredColorScheme()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A8DownViewC23setPreferredColorSchemeyyF">setPreferredColorScheme()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the CSS color scheme according to the receiver&rsquo;s effective appearance.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">setPreferredColorScheme</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A8DownViewC14htmlScrollSize17completionHandleryySo6CGSizeVc_tF"></a>
+                    <a name="//apple_ref/swift/Method/htmlScrollSize(completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A8DownViewC14htmlScrollSize17completionHandleryySo6CGSizeVc_tF">htmlScrollSize(completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the scroll size of the HTML document and passes it in to a closure.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">htmlScrollSize</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">NSSize</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure to invoke with the resulting size.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A8DownViewC20widthOfWidestElement17completionHandleryy12CoreGraphics7CGFloatVc_tF"></a>
+                    <a name="//apple_ref/swift/Method/widthOfWidestElement(completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A8DownViewC20widthOfWidestElement17completionHandleryy12CoreGraphics7CGFloatVc_tF">widthOfWidestElement(completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the width of the widest top-level element in the body of the document and passes it in to a closure.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">widthOfWidestElement</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure to invoke with the resulting width.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Overridden%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Overridden Methods" class="dashAnchor"></a>
+                <a href="#/Overridden%20Methods">
+                  <h3 class="section-name">Overridden Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Enlighten@objc(cs)EnlightenDownView(im)layout"></a>
+                    <a name="//apple_ref/swift/Method/layout()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Enlighten@objc(cs)EnlightenDownView(im)layout">layout()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">layout</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Responder%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Responder Methods" class="dashAnchor"></a>
+                <a href="#/Responder%20Methods">
+                  <h3 class="section-name">Responder Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Enlighten@objc(cs)EnlightenDownView(im)mouseDown:"></a>
+                    <a name="//apple_ref/swift/Method/mouseDown(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Enlighten@objc(cs)EnlightenDownView(im)mouseDown:">mouseDown(with:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">mouseDown</span><span class="p">(</span><span class="n">with</span> <span class="nv">event</span><span class="p">:</span> <span class="kt">NSEvent</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Enlighten@objc(cs)EnlightenDownView(im)mouseDragged:"></a>
+                    <a name="//apple_ref/swift/Method/mouseDragged(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Enlighten@objc(cs)EnlightenDownView(im)mouseDragged:">mouseDragged(with:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">mouseDragged</span><span class="p">(</span><span class="n">with</span> <span class="nv">event</span><span class="p">:</span> <span class="kt">NSEvent</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-11-20)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

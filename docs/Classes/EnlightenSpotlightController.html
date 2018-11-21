@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EnlightenSpotlightController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/EnlightenSpotlightController" class="dashAnchor"></a>
+    <a title="EnlightenSpotlightController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (81% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        EnlightenSpotlightController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenDownView.html">EnlightenDownView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenHelpButton.html">EnlightenHelpButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenIris.html">EnlightenIris</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenIrisStage.html">EnlightenIrisStage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenKeyedIris.html">EnlightenKeyedIris</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenKeyedSpotlightController.html">EnlightenKeyedSpotlightController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenPopover.html">EnlightenPopover</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenPopoverContentViewController.html">EnlightenPopoverContentViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenSpotlightController.html">EnlightenSpotlightController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenSpotlightController/FollowspotShape.html">– FollowspotShape</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenSpotlightController/NavigationDirection.html">– NavigationDirection</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/EnlightenError.html">EnlightenError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Quadrant.html">Quadrant</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/NSColor.html">NSColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSRect.html">NSRect</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSRectEdge.html">NSRectEdge</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSScreen.html">NSScreen</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSView.html">NSView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSWindow.html">NSWindow</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/EnlightenPopoverDelegate.html">EnlightenPopoverDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EnlightenSpotlight.html">EnlightenSpotlight</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EnlightenSpotlightControllerDelegate.html">EnlightenSpotlightControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:9Enlighten0A23SpotlightControllerKeysP">EnlightenSpotlightControllerKeys</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/CSSConstants.html">CSSConstants</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CSSProperty.html">CSSProperty</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CSSPropertyValue.html">CSSPropertyValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CSSPropertyValue/TextAlign.html">– TextAlign</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Constants.html">Constants</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>EnlightenSpotlightController</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">EnlightenSpotlightController</span> <span class="p">:</span> <span class="kt">NSViewController</span></code></pre>
+
+                </div>
+              </div>
+            <p>The controller for a spotlight-based onboarding presentation.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Controller%20Enumerations"></a>
+                <a name="//apple_ref/swift/Section/Controller Enumerations" class="dashAnchor"></a>
+                <a href="#/Controller%20Enumerations">
+                  <h3 class="section-name">Controller Enumerations</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A19SpotlightControllerC15FollowspotShapeO"></a>
+                    <a name="//apple_ref/swift/Enum/FollowspotShape" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A19SpotlightControllerC15FollowspotShapeO">FollowspotShape</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The shape of the followspot spotlight.</p>
+
+                        <a href="../Classes/EnlightenSpotlightController/FollowspotShape.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">FollowspotShape</span> <span class="p">:</span> <span class="kt">CaseIterable</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A19SpotlightControllerC19NavigationDirectionO"></a>
+                    <a name="//apple_ref/swift/Enum/NavigationDirection" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A19SpotlightControllerC19NavigationDirectionO">NavigationDirection</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Classes/EnlightenSpotlightController/NavigationDirection.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">enum</span> <span class="kt">NavigationDirection</span> <span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Stored%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Public Stored Properties" class="dashAnchor"></a>
+                <a href="#/Public%20Stored%20Properties">
+                  <h3 class="section-name">Public Stored Properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A19SpotlightControllerC8delegateAA0abC8Delegate_pSgXwvp"></a>
+                    <a name="//apple_ref/swift/Property/delegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A19SpotlightControllerC8delegateAA0abC8Delegate_pSgXwvp">delegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">weak</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/EnlightenSpotlightControllerDelegate.html">EnlightenSpotlightControllerDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A19SpotlightControllerC15usesProfileSpotSbvp"></a>
+                    <a name="//apple_ref/swift/Property/usesProfileSpot" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A19SpotlightControllerC15usesProfileSpotSbvp">usesProfileSpot</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the spotlight focuses on the view.</p>
+
+<p>The spotlight <em>focus</em> animation is the scaling of the spotlight iris on a particular view from a
+followspot (wider) to a profile spot (tighter).</p>
+
+<p>This property has a default value of <code>true</code>.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    The <code><a href="../Classes/EnlightenSpotlightController.html#/s:9Enlighten0A19SpotlightControllerC15followspotShapeAC010FollowspotE0Ovp">followspotShape</a></code> must <strong>not</strong> be <code>.none</code> if this property is false.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">usesProfileSpot</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A19SpotlightControllerC15followspotShapeAC010FollowspotE0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/followspotShape" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A19SpotlightControllerC15followspotShapeAC010FollowspotE0Ovp">followspotShape</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The shape of the followspot.</p>
+
+<p>This property has a default value of <code>.circle</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">followspotShape</span><span class="p">:</span> <span class="kt">EnlightenSpotlightController</span><span class="o">.</span><span class="kt"><a href="../Classes/EnlightenSpotlightController/FollowspotShape.html">FollowspotShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A19SpotlightControllerC15backgroundColorSo7NSColorCvp"></a>
+                    <a name="//apple_ref/swift/Property/backgroundColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A19SpotlightControllerC15backgroundColorSo7NSColorCvp">backgroundColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The controller&rsquo;s background color.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">backgroundColor</span><span class="p">:</span> <span class="kt">NSColor</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A19SpotlightControllerC29presentationAnimationDurationSdvp"></a>
+                    <a name="//apple_ref/swift/Property/presentationAnimationDuration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A19SpotlightControllerC29presentationAnimationDurationSdvp">presentationAnimationDuration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The animation duration, in seconds, used to initially present the controller.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only used if <code><a href="../Classes/EnlightenSpotlightController.html#/s:9Enlighten0A19SpotlightControllerC7present2in9animatingySo8NSWindowCSg_SbtF">present(in:animating:)</a></code> is called with a true <code>animating</code> parameter.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">presentationAnimationDuration</span><span class="p">:</span> <span class="kt">TimeInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A19SpotlightControllerC49presentationFollowspotTransitionAnimationDurationSdvp"></a>
+                    <a name="//apple_ref/swift/Property/presentationFollowspotTransitionAnimationDuration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A19SpotlightControllerC49presentationFollowspotTransitionAnimationDurationSdvp">presentationFollowspotTransitionAnimationDuration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The duration, in seconds, of the followspot transition animation used when initially presenting the controller.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only used if <code><a href="../Classes/EnlightenSpotlightController.html#/s:9Enlighten0A19SpotlightControllerC7present2in9animatingySo8NSWindowCSg_SbtF">present(in:animating:)</a></code> is called with a true <code>animating</code> parameter,
+    <code><a href="../Classes/EnlightenSpotlightController.html#/s:9Enlighten0A19SpotlightControllerC15usesProfileSpotSbvp">usesProfileSpot</a></code> is false, and <code><a href="../Classes/EnlightenSpotlightController.html#/s:9Enlighten0A19SpotlightControllerC15followspotShapeAC010FollowspotE0Ovp">followspotShape</a></code> is <strong>not</strong> <code>.none</code>.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">presentationFollowspotTransitionAnimationDuration</span><span class="p">:</span> <span class="kt">TimeInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A19SpotlightControllerC24profileSpotFocusDurationSdvp"></a>
+                    <a name="//apple_ref/swift/Property/profileSpotFocusDuration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A19SpotlightControllerC24profileSpotFocusDurationSdvp">profileSpotFocusDuration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The duration, in seconds, of the spotlight <em>focus</em> animation.</p>
+
+<p>The spotlight <em>focus</em> animation is the scaling of the spotlight iris on a particular view from a
+followspot (wider) to a profile spot (tighter), or vice versa.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">profileSpotFocusDuration</span><span class="p">:</span> <span class="kt">TimeInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A19SpotlightControllerC30profileSpotFocusTimingFunctionSo07CAMediagH0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/profileSpotFocusTimingFunction" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A19SpotlightControllerC30profileSpotFocusTimingFunctionSo07CAMediagH0Cvp">profileSpotFocusTimingFunction</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The timing function of the spotlight <em>focus</em> animation.</p>
+
+<p>The spotlight <em>focus</em> animation is the scaling of the spotlight iris on a particular view from a
+followspot (wider) to a profile spot (tighter), or vice versa.</p>
+
+<p>By default, uses a ease-in-ease-out pacing.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">profileSpotFocusTimingFunction</span><span class="p">:</span> <span class="kt">CAMediaTimingFunction</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A19SpotlightControllerC28followspotTransitionDurationSdvp"></a>
+                    <a name="//apple_ref/swift/Property/followspotTransitionDuration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A19SpotlightControllerC28followspotTransitionDurationSdvp">followspotTransitionDuration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The duration, in seconds, of the spotlight transition animation.</p>
+
+<p>The spotlight transition animation is the transitioning of the followspot from one view to the next.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">followspotTransitionDuration</span><span class="p">:</span> <span class="kt">TimeInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A19SpotlightControllerC34followspotTransitionTimingFunctionSo07CAMediafG0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/followspotTransitionTimingFunction" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A19SpotlightControllerC34followspotTransitionTimingFunctionSo07CAMediafG0Cvp">followspotTransitionTimingFunction</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The timing function of the spotlight transition animation.</p>
+
+<p>The spotlight transition animation is the transitioning of the followspot from one view to the next.</p>
+
+<p>By default, uses a ease-in-ease-out pacing.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">followspotTransitionTimingFunction</span><span class="p">:</span> <span class="kt">CAMediaTimingFunction</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Enlighten@objc(cs)EnlightenSpotlightController(py)isPresenting"></a>
+                    <a name="//apple_ref/swift/Property/isPresenting" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Enlighten@objc(cs)EnlightenSpotlightController(py)isPresenting">isPresenting</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the controller is presenting.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">dynamic</span> <span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">isPresenting</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A19SpotlightControllerC19navigatingDirectionAC010NavigationE0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/navigatingDirection" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A19SpotlightControllerC19navigatingDirectionAC010NavigationE0Ovp">navigatingDirection</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The most recent direction the user is navigating in.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">navigatingDirection</span><span class="p">:</span> <span class="kt">EnlightenSpotlightController</span><span class="o">.</span><span class="kt"><a href="../Classes/EnlightenSpotlightController/NavigationDirection.html">NavigationDirection</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A19SpotlightControllerC7popoverAA0A7PopoverCvp"></a>
+                    <a name="//apple_ref/swift/Property/popover" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A19SpotlightControllerC7popoverAA0A7PopoverCvp">popover</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">popover</span><span class="p">:</span> <span class="kt"><a href="../Classes/EnlightenPopover.html">EnlightenPopover</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A19SpotlightControllerC10skipButtonSo8NSButtonCvp"></a>
+                    <a name="//apple_ref/swift/Property/skipButton" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A19SpotlightControllerC10skipButtonSo8NSButtonCvp">skipButton</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">skipButton</span><span class="p">:</span> <span class="kt">NSButton</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Computed%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Public Computed Properties" class="dashAnchor"></a>
+                <a href="#/Public%20Computed%20Properties">
+                  <h3 class="section-name">Public Computed Properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A19SpotlightControllerC11currentIrisAA0aE0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/currentIris" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A19SpotlightControllerC11currentIrisAA0aE0Cvp">currentIris</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The currently focused iris.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">currentIris</span><span class="p">:</span> <span class="kt"><a href="../Classes/EnlightenIris.html">EnlightenIris</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A19SpotlightControllerC12previousIrisAA0aE0CSgvp"></a>
+                    <a name="//apple_ref/swift/Property/previousIris" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A19SpotlightControllerC12previousIrisAA0aE0CSgvp">previousIris</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The previously focused iris.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">previousIris</span><span class="p">:</span> <span class="kt"><a href="../Classes/EnlightenIris.html">EnlightenIris</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A19SpotlightControllerC11focusedViewSo6NSViewCSgvp"></a>
+                    <a name="//apple_ref/swift/Property/focusedView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A19SpotlightControllerC11focusedViewSo6NSViewCSgvp">focusedView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The currently focused view.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">focusedView</span><span class="p">:</span> <span class="kt">NSView</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A19SpotlightControllerC19previousFocusedViewSo6NSViewCSgvp"></a>
+                    <a name="//apple_ref/swift/Property/previousFocusedView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A19SpotlightControllerC19previousFocusedViewSo6NSViewCSgvp">previousFocusedView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The previously focused view.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">previousFocusedView</span><span class="p">:</span> <span class="kt">NSView</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A19SpotlightControllerC13isInitialIrisSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isInitialIris" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A19SpotlightControllerC13isInitialIrisSbvp">isInitialIris</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the controller is focused on the first iris with no previous iris (i.e. the controller is in its
+inital state).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isInitialIris</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <a href="#/Initializers">
+                  <h3 class="section-name">Initializers</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Enlighten@objc(cs)EnlightenSpotlightController(im)init"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Enlighten@objc(cs)EnlightenSpotlightController(im)init">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Enlighten@objc(cs)EnlightenSpotlightController(im)initWithCoder:"></a>
+                    <a name="//apple_ref/swift/Method/init(coder:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Enlighten@objc(cs)EnlightenSpotlightController(im)initWithCoder:">init(coder:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">required</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">?(</span><span class="nv">coder</span><span class="p">:</span> <span class="kt">NSCoder</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Overridden%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Overridden Methods" class="dashAnchor"></a>
+                <a href="#/Overridden%20Methods">
+                  <h3 class="section-name">Overridden Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Enlighten@objc(cs)EnlightenSpotlightController(im)viewWillLayout"></a>
+                    <a name="//apple_ref/swift/Method/viewWillLayout()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Enlighten@objc(cs)EnlightenSpotlightController(im)viewWillLayout">viewWillLayout()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">viewWillLayout</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Presentation%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Presentation Methods" class="dashAnchor"></a>
+                <a href="#/Presentation%20Methods">
+                  <h3 class="section-name">Presentation Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A19SpotlightControllerC7present2in9animatingySo8NSWindowCSg_SbtF"></a>
+                    <a name="//apple_ref/swift/Method/present(in:animating:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A19SpotlightControllerC7present2in9animatingySo8NSWindowCSg_SbtF">present(in:animating:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Presents and begins the onboarding introduction.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">present</span><span class="p">(</span><span class="k">in</span> <span class="nv">window</span><span class="p">:</span> <span class="kt">NSWindow</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">animating</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>window</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The window to present the controller in. When <code>nil</code>, resolves the window in the following order:</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>animating</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether to animate the addition of the controller to the view hierarchy.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A19SpotlightControllerC7dismissyyF"></a>
+                    <a name="//apple_ref/swift/Method/dismiss()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A19SpotlightControllerC7dismissyyF">dismiss()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Animates the controller&rsquo;s dismissal.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">dismiss</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Configuration%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Configuration Methods" class="dashAnchor"></a>
+                <a href="#/Configuration%20Methods">
+                  <h3 class="section-name">Configuration Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A19SpotlightControllerC03addB04irisyAA0A4IrisC_tF"></a>
+                    <a name="//apple_ref/swift/Method/addSpotlight(iris:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A19SpotlightControllerC03addB04irisyAA0A4IrisC_tF">addSpotlight(iris:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds an iris to the controller.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">addSpotlight</span><span class="p">(</span><span class="nv">iris</span><span class="p">:</span> <span class="kt"><a href="../Classes/EnlightenIris.html">EnlightenIris</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>iris</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The iris to add.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A19SpotlightControllerC03addB04view14markdownStringAA0A4IrisCSo6NSViewC_SStF"></a>
+                    <a name="//apple_ref/swift/Method/addSpotlight(view:markdownString:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A19SpotlightControllerC03addB04view14markdownStringAA0A4IrisCSo6NSViewC_SStF">addSpotlight(view:markdownString:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A convenience method for creating and adding an iris to the controller.</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    <p>Errors thrown during the loading of the Markdown string are passed to the spotlight controller&rsquo;s
+         delegate&rsquo;s
+         <code><a href="../Protocols/EnlightenSpotlightControllerDelegate.html#/c:@M@Enlighten@objc(pl)EnlightenSpotlightControllerDelegate(im)spotlightControllerFailedToLoadWithMarkdownString:for:with:">EnlightenSpotlightControllerDelegate.spotlightControllerFailedToLoad(markdownString:for:with:)</a></code>
+         method.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">open</span> <span class="kd">func</span> <span class="nf">addSpotlight</span><span class="p">(</span><span class="nv">view</span><span class="p">:</span> <span class="kt">NSView</span><span class="p">,</span> <span class="nv">markdownString</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EnlightenIris.html">EnlightenIris</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view to spotlight.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>markdownString</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The CommonMark Markdown string displayed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The newly created spotlight iris.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A19SpotlightControllerC03addB04view16markdownFilename2inAA0A4IrisCSo6NSViewC_SSSo8NSBundleCtKF"></a>
+                    <a name="//apple_ref/swift/Method/addSpotlight(view:markdownFilename:in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A19SpotlightControllerC03addB04view16markdownFilename2inAA0A4IrisCSo6NSViewC_SSSo8NSBundleCtKF">addSpotlight(view:markdownFilename:in:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A convenience method for creating and adding an iris to the controller.</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    <p>Errors thrown during the loading of the Markdown string are passed to the spotlight controller&rsquo;s
+         delegate&rsquo;s
+         <code><a href="../Protocols/EnlightenSpotlightControllerDelegate.html#/c:@M@Enlighten@objc(pl)EnlightenSpotlightControllerDelegate(im)spotlightControllerFailedToLoadWithMarkdownString:for:with:">EnlightenSpotlightControllerDelegate.spotlightControllerFailedToLoad(markdownString:for:with:)</a></code>
+         method.</p>
+
+</div>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    <p>Asserts the existence of the Markdown file in &lsquo;Debug&rsquo; builds, while failing silently in &lsquo;Release&rsquo;
+       builds (by returning an empty string).</p>
+
+</div>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p>Throws an error if the contents of the file <code>markdownFilename</code> cannot be read.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">open</span> <span class="kd">func</span> <span class="nf">addSpotlight</span><span class="p">(</span><span class="nv">view</span><span class="p">:</span> <span class="kt">NSView</span><span class="p">,</span>
+                       <span class="nv">markdownFilename</span><span class="p">:</span> <span class="kt"><a href="../Classes/EnlightenIris.html">EnlightenIris</a></span><span class="o">.</span><span class="kt">MarkdownFilename</span><span class="p">,</span>
+                       <span class="k">in</span> <span class="nv">bundle</span><span class="p">:</span> <span class="kt">Bundle</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EnlightenIris.html">EnlightenIris</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view to spotlight.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>markdownFilename</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the CommonMark Markdown file in the provided bundle that will be displayed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bundle</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The bundle that contains the Markdown file named <code>markdownFilename</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The newly created spotlight iris.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A19SpotlightControllerC4iris3forAA0A4IrisCSgSo6NSViewC_tF"></a>
+                    <a name="//apple_ref/swift/Method/iris(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A19SpotlightControllerC4iris3forAA0A4IrisCSgSo6NSViewC_tF">iris(for:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the iris for a view, if it exists.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">iris</span><span class="p">(</span><span class="k">for</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">NSView</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EnlightenIris.html">EnlightenIris</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view to return the iris for.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The iris for <code>view</code>, or <code>nil</code> if no iris for that view has been added to the controller.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Spotlight%20Navigation%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Spotlight Navigation Methods" class="dashAnchor"></a>
+                <a href="#/Spotlight%20Navigation%20Methods">
+                  <h3 class="section-name">Spotlight Navigation Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A19SpotlightControllerC15navigateForwardyyF"></a>
+                    <a name="//apple_ref/swift/Method/navigateForward()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A19SpotlightControllerC15navigateForwardyyF">navigateForward()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Animates the change to the next stage of the controller.</p>
+
+<p>Unlike <code>showNextSpotlight</code>, this method ensures the controller is presented and not already animating a
+stage change.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">navigateForward</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A19SpotlightControllerC16navigateBackwardyyF"></a>
+                    <a name="//apple_ref/swift/Method/navigateBackward()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A19SpotlightControllerC16navigateBackwardyyF">navigateBackward()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Animates the change to the previous stage of the controller.</p>
+
+<p>Unlike <code>showPreviousSpotlight</code>, this method ensures the controller is presented and not already animating a
+stage change.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">navigateBackward</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A19SpotlightControllerC08showNextB0yyF"></a>
+                    <a name="//apple_ref/swift/Method/showNextSpotlight()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A19SpotlightControllerC08showNextB0yyF">showNextSpotlight()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Animates the change to the next stage of the controller.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    This method should <em>rarely</em> be called. The use of <code>navigateForward</code> is preferred.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">showNextSpotlight</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A19SpotlightControllerC012showPreviousB0yyF"></a>
+                    <a name="//apple_ref/swift/Method/showPreviousSpotlight()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A19SpotlightControllerC012showPreviousB0yyF">showPreviousSpotlight()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Animates the change to the previous stage of the controller.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    This method should <em>rarely</em> be called. The use of <code>navigateForward</code> is preferred.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">showPreviousSpotlight</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Skip%20Button%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Skip Button Methods" class="dashAnchor"></a>
+                <a href="#/Skip%20Button%20Methods">
+                  <h3 class="section-name">Skip Button Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A19SpotlightControllerC14showSkipButtonyyF"></a>
+                    <a name="//apple_ref/swift/Method/showSkipButton()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A19SpotlightControllerC14showSkipButtonyyF">showSkipButton()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds the skip button to the view hierarchy.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">showSkipButton</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@Enlighten@objc(cs)EnlightenSpotlightController(im)skipButtonAction"></a>
+                    <a name="//apple_ref/swift/Method/skipButtonAction()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@Enlighten@objc(cs)EnlightenSpotlightController(im)skipButtonAction">skipButtonAction()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The skip button&rsquo;s action method.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">func</span> <span class="nf">skipButtonAction</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Enlighten%20Popover%20Delegate"></a>
+                <a name="//apple_ref/swift/Section/Enlighten Popover Delegate" class="dashAnchor"></a>
+                <a href="#/Enlighten%20Popover%20Delegate">
+                  <h3 class="section-name">Enlighten Popover Delegate</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Enlighten@objc(pl)EnlightenPopoverDelegate(im)enlightenPopoverFailedToLoadWithDownError:"></a>
+                    <a name="//apple_ref/swift/Method/enlightenPopoverFailedToLoad(downError:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Enlighten@objc(pl)EnlightenPopoverDelegate(im)enlightenPopoverFailedToLoadWithDownError:">enlightenPopoverFailedToLoad(downError:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">enlightenPopoverFailedToLoad</span><span class="p">(</span><span class="nv">downError</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Testing%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Testing Methods" class="dashAnchor"></a>
+                <a href="#/Testing%20Methods">
+                  <h3 class="section-name">Testing Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A19SpotlightControllerC23validateMarkdownStringsyyKF"></a>
+                    <a name="//apple_ref/swift/Method/validateMarkdownStrings()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A19SpotlightControllerC23validateMarkdownStringsyyKF">validateMarkdownStrings()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Validates that each Markdown string in the controller can be loaded.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    A <code><a href="../Enums/EnlightenError.html#/s:9Enlighten0A5ErrorO16failedToValidateyACSS_s0B0_ptcACmF">EnlightenError.failedToValidate(markdownString:error:)</a></code> error if a Markdown string cannot
+      be loaded.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">validateMarkdownStrings</span><span class="p">()</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-11-20)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

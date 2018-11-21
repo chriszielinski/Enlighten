@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EnlightenKeyedSpotlightController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/EnlightenKeyedSpotlightController" class="dashAnchor"></a>
+    <a title="EnlightenKeyedSpotlightController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (81% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        EnlightenKeyedSpotlightController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenDownView.html">EnlightenDownView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenHelpButton.html">EnlightenHelpButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenIris.html">EnlightenIris</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenIrisStage.html">EnlightenIrisStage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenKeyedIris.html">EnlightenKeyedIris</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenKeyedSpotlightController.html">EnlightenKeyedSpotlightController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenPopover.html">EnlightenPopover</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenPopoverContentViewController.html">EnlightenPopoverContentViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenSpotlightController.html">EnlightenSpotlightController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenSpotlightController/FollowspotShape.html">– FollowspotShape</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenSpotlightController/NavigationDirection.html">– NavigationDirection</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/EnlightenError.html">EnlightenError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Quadrant.html">Quadrant</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/NSColor.html">NSColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSRect.html">NSRect</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSRectEdge.html">NSRectEdge</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSScreen.html">NSScreen</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSView.html">NSView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSWindow.html">NSWindow</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/EnlightenPopoverDelegate.html">EnlightenPopoverDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EnlightenSpotlight.html">EnlightenSpotlight</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EnlightenSpotlightControllerDelegate.html">EnlightenSpotlightControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:9Enlighten0A23SpotlightControllerKeysP">EnlightenSpotlightControllerKeys</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/CSSConstants.html">CSSConstants</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CSSProperty.html">CSSProperty</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CSSPropertyValue.html">CSSPropertyValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CSSPropertyValue/TextAlign.html">– TextAlign</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Constants.html">Constants</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>EnlightenKeyedSpotlightController</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">EnlightenKeyedSpotlightController</span><span class="o">&lt;</span><span class="kt">Key</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt"><a href="../Classes/EnlightenSpotlightController.html">EnlightenSpotlightController</a></span> <span class="k">where</span> <span class="kt">Key</span> <span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:9Enlighten0A23SpotlightControllerKeysP">EnlightenSpotlightControllerKeys</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>The controller for a spotlight-based onboarding presentation.</p>
+
+<p>Unlike its key-less variant <code><a href="../Classes/EnlightenSpotlightController.html">EnlightenSpotlightController</a></code>, the keyed <code>EnlightenKeyedSpotlightController</code> allows
+the presentation order of the irises to be specified by the case order of an
+<code><a href="../Protocols.html#/s:9Enlighten0A23SpotlightControllerKeysP">EnlightenSpotlightControllerKeys</a></code>-conforming enumeration.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Stored%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Public Stored Properties" class="dashAnchor"></a>
+                <a href="#/Public%20Stored%20Properties">
+                  <h3 class="section-name">Public Stored Properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A24KeyedSpotlightControllerC21presentationOrderKeysSDyxSiGvp"></a>
+                    <a name="//apple_ref/swift/Property/presentationOrderKeys" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A24KeyedSpotlightControllerC21presentationOrderKeysSDyxSiGvp">presentationOrderKeys</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The order to present the irises in.</p>
+
+<p>The dictionary maps <code>Key</code>s to their presentation order index.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">presentationOrderKeys</span><span class="p">:</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Int</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <a href="#/Initializers">
+                  <h3 class="section-name">Initializers</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A24KeyedSpotlightControllerC4keysACyxGxm_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(keys:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A24KeyedSpotlightControllerC4keysACyxGxm_tcfc">init(keys:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes a new keyed spotlight controller.</p>
+
+<p>Unlike the key-less variant, the keyed controller allows the presentation order of the irises to be specified.</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    <p>Ensure the only irises added to this <em>keyed</em> spotlight controller are of the type
+         <code><a href="../Classes/EnlightenKeyedIris.html">EnlightenKeyedIris</a></code>.</p>
+
+</div>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    <p>A fatal error will be thrown if an instance of <code><a href="../Classes/EnlightenIris.html">EnlightenIris</a></code> is added to a <strong>keyed</strong> controller.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">keys</span><span class="p">:</span> <span class="kt">Key</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keys</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The type of an enumeration that conforms to the <code><a href="../Protocols.html#/s:9Enlighten0A23SpotlightControllerKeysP">EnlightenSpotlightControllerKeys</a></code> protocol.
+              The keyed irises will be presented in the order of the enumeration cases.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A24KeyedSpotlightControllerC5coderACyxGSgSo7NSCoderC_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(coder:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A24KeyedSpotlightControllerC5coderACyxGSgSo7NSCoderC_tcfc">init(coder:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">required</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">?(</span><span class="nv">coder</span><span class="p">:</span> <span class="kt">NSCoder</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Presentation%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Presentation Methods" class="dashAnchor"></a>
+                <a href="#/Presentation%20Methods">
+                  <h3 class="section-name">Presentation Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A24KeyedSpotlightControllerC7present2in9animatingySo8NSWindowCSg_SbtF"></a>
+                    <a name="//apple_ref/swift/Method/present(in:animating:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A24KeyedSpotlightControllerC7present2in9animatingySo8NSWindowCSg_SbtF">present(in:animating:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">present</span><span class="p">(</span><span class="k">in</span> <span class="nv">window</span><span class="p">:</span> <span class="kt">NSWindow</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">animating</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Configuration%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Configuration Methods" class="dashAnchor"></a>
+                <a href="#/Configuration%20Methods">
+                  <h3 class="section-name">Configuration Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A24KeyedSpotlightControllerC03addC04irisyAA0A4IrisC_tF"></a>
+                    <a name="//apple_ref/swift/Method/addSpotlight(iris:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A24KeyedSpotlightControllerC03addC04irisyAA0A4IrisC_tF">addSpotlight(iris:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">addSpotlight</span><span class="p">(</span><span class="nv">iris</span><span class="p">:</span> <span class="kt"><a href="../Classes/EnlightenIris.html">EnlightenIris</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A24KeyedSpotlightControllerC03addC04view14markdownStringAA0A4IrisCSo6NSViewC_SStF"></a>
+                    <a name="//apple_ref/swift/Method/addSpotlight(view:markdownString:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A24KeyedSpotlightControllerC03addC04view14markdownStringAA0A4IrisCSo6NSViewC_SStF">addSpotlight(view:markdownString:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">addSpotlight</span><span class="p">(</span><span class="nv">view</span><span class="p">:</span> <span class="kt">NSView</span><span class="p">,</span> <span class="nv">markdownString</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EnlightenIris.html">EnlightenIris</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A24KeyedSpotlightControllerC03addC04view16markdownFilename2inAA0A4IrisCSo6NSViewC_SSSo8NSBundleCtKF"></a>
+                    <a name="//apple_ref/swift/Method/addSpotlight(view:markdownFilename:in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A24KeyedSpotlightControllerC03addC04view16markdownFilename2inAA0A4IrisCSo6NSViewC_SSSo8NSBundleCtKF">addSpotlight(view:markdownFilename:in:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">addSpotlight</span><span class="p">(</span><span class="nv">view</span><span class="p">:</span> <span class="kt">NSView</span><span class="p">,</span>
+                                <span class="nv">markdownFilename</span><span class="p">:</span> <span class="kt"><a href="../Classes/EnlightenIris.html">EnlightenIris</a></span><span class="o">.</span><span class="kt">MarkdownFilename</span><span class="p">,</span>
+                                <span class="k">in</span> <span class="nv">bundle</span><span class="p">:</span> <span class="kt">Bundle</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EnlightenIris.html">EnlightenIris</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A24KeyedSpotlightControllerC03addC09keyedIrisyAA0abG0CyxG_tF"></a>
+                    <a name="//apple_ref/swift/Method/addSpotlight(keyedIris:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A24KeyedSpotlightControllerC03addC09keyedIrisyAA0abG0CyxG_tF">addSpotlight(keyedIris:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds a keyed iris to the controller.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">addSpotlight</span><span class="p">(</span><span class="nv">keyedIris</span><span class="p">:</span> <span class="kt"><a href="../Classes/EnlightenKeyedIris.html">EnlightenKeyedIris</a></span><span class="o">&lt;</span><span class="kt">Key</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyedIris</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The keyed iris to add.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A24KeyedSpotlightControllerC03addC020presentationOrderKey4view14markdownStringAA0aB4IrisCyxGx_So6NSViewCSStF"></a>
+                    <a name="//apple_ref/swift/Method/addSpotlight(presentationOrderKey:view:markdownString:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A24KeyedSpotlightControllerC03addC020presentationOrderKey4view14markdownStringAA0aB4IrisCyxGx_So6NSViewCSStF">addSpotlight(presentationOrderKey:view:markdownString:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A convenience method for creating and adding a keyed iris to the controller.</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    <p>Errors thrown during the loading of the Markdown string are passed to the spotlight controller&rsquo;s
+         delegate&rsquo;s
+         <code><a href="../Protocols/EnlightenSpotlightControllerDelegate.html#/c:@M@Enlighten@objc(pl)EnlightenSpotlightControllerDelegate(im)spotlightControllerFailedToLoadWithMarkdownString:for:with:">EnlightenSpotlightControllerDelegate.spotlightControllerFailedToLoad(markdownString:for:with:)</a></code>
+         method.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">addSpotlight</span><span class="p">(</span><span class="n">presentationOrderKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">Key</span><span class="p">,</span>
+                         <span class="nv">view</span><span class="p">:</span> <span class="kt">NSView</span><span class="p">,</span>
+                         <span class="nv">markdownString</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EnlightenKeyedIris.html">EnlightenKeyedIris</a></span><span class="o">&lt;</span><span class="kt">Key</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>presentationOrderKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The presentation order key for the new keyed iris.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view to spotlight.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>markdownString</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The CommonMark Markdown string displayed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The newly created spotlight iris.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A24KeyedSpotlightControllerC03addC020presentationOrderKey4view16markdownFilename2inAA0aB4IrisCyxGx_So6NSViewCSSSo8NSBundleCtKF"></a>
+                    <a name="//apple_ref/swift/Method/addSpotlight(presentationOrderKey:view:markdownFilename:in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A24KeyedSpotlightControllerC03addC020presentationOrderKey4view16markdownFilename2inAA0aB4IrisCyxGx_So6NSViewCSSSo8NSBundleCtKF">addSpotlight(presentationOrderKey:view:markdownFilename:in:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A convenience method for creating and adding a keyed iris to the controller.</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    <p>Errors thrown during the loading of the Markdown string are passed to the spotlight controller&rsquo;s
+         delegate&rsquo;s
+         <code><a href="../Protocols/EnlightenSpotlightControllerDelegate.html#/c:@M@Enlighten@objc(pl)EnlightenSpotlightControllerDelegate(im)spotlightControllerFailedToLoadWithMarkdownString:for:with:">EnlightenSpotlightControllerDelegate.spotlightControllerFailedToLoad(markdownString:for:with:)</a></code>
+         method.</p>
+
+</div>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    <p>Asserts the existence of the Markdown file in &lsquo;Debug&rsquo; builds, while failing silently in &lsquo;Release&rsquo;
+       builds (by returning an empty string).</p>
+
+</div>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p>Throws an error if the contents of the file <code>markdownFilename</code> cannot be read.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">open</span> <span class="kd">func</span> <span class="nf">addSpotlight</span><span class="p">(</span><span class="n">presentationOrderKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">Key</span><span class="p">,</span>
+                       <span class="nv">view</span><span class="p">:</span> <span class="kt">NSView</span><span class="p">,</span>
+                       <span class="nv">markdownFilename</span><span class="p">:</span> <span class="kt"><a href="../Classes/EnlightenIris.html">EnlightenIris</a></span><span class="o">.</span><span class="kt">MarkdownFilename</span><span class="p">,</span>
+                       <span class="k">in</span> <span class="nv">bundle</span><span class="p">:</span> <span class="kt">Bundle</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EnlightenKeyedIris.html">EnlightenKeyedIris</a></span><span class="o">&lt;</span><span class="kt">Key</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>presentationOrderKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The presentation order key for the new keyed iris.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view to spotlight.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>markdownFilename</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the CommonMark Markdown file in the provided bundle that will be displayed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bundle</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The bundle that contains the Markdown file named <code>markdownFilename</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The newly created spotlight iris.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A24KeyedSpotlightControllerC9keyedIris3forAA0abF0CyxGSgSo6NSViewC_tF"></a>
+                    <a name="//apple_ref/swift/Method/keyedIris(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A24KeyedSpotlightControllerC9keyedIris3forAA0abF0CyxGSgSo6NSViewC_tF">keyedIris(for:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the keyed iris for a view, if it exists.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">keyedIris</span><span class="p">(</span><span class="k">for</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">NSView</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EnlightenKeyedIris.html">EnlightenKeyedIris</a></span><span class="o">&lt;</span><span class="kt">Key</span><span class="o">&gt;</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view to return the keyed iris for.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The keyed iris for <code>view</code>, or <code>nil</code> if no iris for that view has been added to the controller.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A24KeyedSpotlightControllerC9keyedIris3forAA0abF0CyxGSgx_tF"></a>
+                    <a name="//apple_ref/swift/Method/keyedIris(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A24KeyedSpotlightControllerC9keyedIris3forAA0abF0CyxGSgx_tF">keyedIris(for:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the keyed iris for a presentation order key, if it exists.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">keyedIris</span><span class="p">(</span><span class="k">for</span> <span class="nv">presentationOrderKey</span><span class="p">:</span> <span class="kt">Key</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EnlightenKeyedIris.html">EnlightenKeyedIris</a></span><span class="o">&lt;</span><span class="kt">Key</span><span class="o">&gt;</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>presentationOrderKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The presentation order key to return the keyed iris for.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The keyed iris for <code>presentationOrderKey</code>, or <code>nil</code> if no iris for that key has been added to the
+       controller.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-11-20)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

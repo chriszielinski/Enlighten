@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EnlightenPopover Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/EnlightenPopover" class="dashAnchor"></a>
+    <a title="EnlightenPopover Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (81% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        EnlightenPopover Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenDownView.html">EnlightenDownView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenHelpButton.html">EnlightenHelpButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenIris.html">EnlightenIris</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenIrisStage.html">EnlightenIrisStage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenKeyedIris.html">EnlightenKeyedIris</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenKeyedSpotlightController.html">EnlightenKeyedSpotlightController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenPopover.html">EnlightenPopover</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenPopoverContentViewController.html">EnlightenPopoverContentViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenSpotlightController.html">EnlightenSpotlightController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenSpotlightController/FollowspotShape.html">– FollowspotShape</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnlightenSpotlightController/NavigationDirection.html">– NavigationDirection</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/EnlightenError.html">EnlightenError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Quadrant.html">Quadrant</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/NSColor.html">NSColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSRect.html">NSRect</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSRectEdge.html">NSRectEdge</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSScreen.html">NSScreen</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSView.html">NSView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSWindow.html">NSWindow</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/EnlightenPopoverDelegate.html">EnlightenPopoverDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EnlightenSpotlight.html">EnlightenSpotlight</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EnlightenSpotlightControllerDelegate.html">EnlightenSpotlightControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:9Enlighten0A23SpotlightControllerKeysP">EnlightenSpotlightControllerKeys</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/CSSConstants.html">CSSConstants</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CSSProperty.html">CSSProperty</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CSSPropertyValue.html">CSSPropertyValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CSSPropertyValue/TextAlign.html">– TextAlign</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Constants.html">Constants</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>EnlightenPopover</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">EnlightenPopover</span> <span class="p">:</span> <span class="kt">NSPopover</span><span class="p">,</span> <span class="kt">NSPopoverDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>A sizeable, detachable, and fitting, popover that renders a Markdown string.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Stored%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Public Stored Properties" class="dashAnchor"></a>
+                <a href="#/Public%20Stored%20Properties">
+                  <h3 class="section-name">Public Stored Properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A7PopoverC15positioningViewSo6NSViewCSgXwvp"></a>
+                    <a name="//apple_ref/swift/Property/positioningView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A7PopoverC15positioningViewSo6NSViewCSgXwvp">positioningView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The view relative to which the popover should be positioned.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">positioningView</span><span class="p">:</span> <span class="kt">NSView</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A7PopoverC13preferredEdgeSo06NSRectD0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/preferredEdge" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A7PopoverC13preferredEdgeSo06NSRectD0VSgvp">preferredEdge</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The edge of <code><a href="../Classes/EnlightenPopover.html#/s:9Enlighten0A7PopoverC15positioningViewSo6NSViewCSgXwvp">positioningView</a></code> the popover should prefer to be anchored to.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">preferredEdge</span><span class="p">:</span> <span class="kt">NSRectEdge</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A7PopoverC11fitInWindowSbvp"></a>
+                    <a name="//apple_ref/swift/Property/fitInWindow" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A7PopoverC11fitInWindowSbvp">fitInWindow</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the popover is fitted within <code><a href="../Classes/EnlightenPopover.html#/s:9Enlighten0A7PopoverC15positioningViewSo6NSViewCSgXwvp">positioningView</a></code>&lsquo;s window.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fitInWindow</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A7PopoverC18windowInnerPadding12CoreGraphics7CGFloatVvp"></a>
+                    <a name="//apple_ref/swift/Property/windowInnerPadding" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A7PopoverC18windowInnerPadding12CoreGraphics7CGFloatVvp">windowInnerPadding</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The padding between the popover and window frame when <code><a href="../Classes/EnlightenPopover.html#/s:9Enlighten0A7PopoverC11fitInWindowSbvp">fitInWindow</a></code> is true.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">windowInnerPadding</span><span class="p">:</span> <span class="kt">CGFloat</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A7PopoverC9canDetachSbvp"></a>
+                    <a name="//apple_ref/swift/Property/canDetach" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A7PopoverC9canDetachSbvp">canDetach</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the popover is detachable.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">canDetach</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A7PopoverC8maxWidth12CoreGraphics7CGFloatVvp"></a>
+                    <a name="//apple_ref/swift/Property/maxWidth" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A7PopoverC8maxWidth12CoreGraphics7CGFloatVvp">maxWidth</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The maximum width of the popover.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">maxWidth</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Computed%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Public Computed Properties" class="dashAnchor"></a>
+                <a href="#/Public%20Computed%20Properties">
+                  <h3 class="section-name">Public Computed Properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A7PopoverC28popoverContentViewControllerAA0abdeF0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/popoverContentViewController" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A7PopoverC28popoverContentViewControllerAA0abdeF0Cvp">popoverContentViewController</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The popover&rsquo;s content view controller.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">popoverContentViewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/EnlightenPopoverContentViewController.html">EnlightenPopoverContentViewController</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A7PopoverC09enlightenB8DelegateAA0abD0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/enlightenPopoverDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A7PopoverC09enlightenB8DelegateAA0abD0_pSgvp">enlightenPopoverDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The popover&rsquo;s <code><a href="../Protocols/EnlightenPopoverDelegate.html">EnlightenPopoverDelegate</a></code> delegate.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">enlightenPopoverDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/EnlightenPopoverDelegate.html">EnlightenPopoverDelegate</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A7PopoverC9maxHeight12CoreGraphics7CGFloatVvp"></a>
+                    <a name="//apple_ref/swift/Property/maxHeight" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A7PopoverC9maxHeight12CoreGraphics7CGFloatVvp">maxHeight</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The maximum height of the popover.</p>
+
+<p>Scrolling is enabled if the <code><a href="../Classes/EnlightenDownView.html">EnlightenDownView</a></code> exceeds the maximum height.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">maxHeight</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A7PopoverC22doesCenterAlignContentSbvp"></a>
+                    <a name="//apple_ref/swift/Property/doesCenterAlignContent" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A7PopoverC22doesCenterAlignContentSbvp">doesCenterAlignContent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the Markdown content should be center aligned.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">doesCenterAlignContent</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <a href="#/Initializers">
+                  <h3 class="section-name">Initializers</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A7PopoverC14markdownString8maxWidth0E6HeightACSS_12CoreGraphics7CGFloatVAItKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(markdownString:maxWidth:maxHeight:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A7PopoverC14markdownString8maxWidth0E6HeightACSS_12CoreGraphics7CGFloatVAItKcfc">init(markdownString:maxWidth:maxHeight:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes a newly allocated Enlighten popover.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Throws a <code>DownErrors</code> if loading the Markdown string fails.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">markdownString</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">maxWidth</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">maxHeight</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">500</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>markdownString</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Markdown string rendered in the popover.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>maxWidth</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The maximum width of the popover.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>maxHeight</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The maximum height of the popover.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A7PopoverC8maxWidth0C6HeightAC12CoreGraphics7CGFloatV_AHtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(maxWidth:maxHeight:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A7PopoverC8maxWidth0C6HeightAC12CoreGraphics7CGFloatV_AHtcfc">init(maxWidth:maxHeight:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">maxWidth</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">maxHeight</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">500</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Enlighten@objc(cs)EnlightenPopover(im)initWithCoder:"></a>
+                    <a name="//apple_ref/swift/Method/init(coder:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Enlighten@objc(cs)EnlightenPopover(im)initWithCoder:">init(coder:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">required</span> <span class="nf">init</span><span class="p">?(</span><span class="nv">coder</span><span class="p">:</span> <span class="kt">NSCoder</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Layout%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Layout Methods" class="dashAnchor"></a>
+                <a href="#/Layout%20Methods">
+                  <h3 class="section-name">Layout Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A7PopoverC18resetDownViewWidthyyF"></a>
+                    <a name="//apple_ref/swift/Method/resetDownViewWidth()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A7PopoverC18resetDownViewWidthyyF">resetDownViewWidth()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Resets the width of the popover&rsquo;s <code><a href="../Classes/EnlightenDownView.html">EnlightenDownView</a></code>.</p>
+
+<p>Used during a Markdown string update.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">resetDownViewWidth</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A7PopoverC10resetWidthyyF"></a>
+                    <a name="//apple_ref/swift/Method/resetWidth()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A7PopoverC10resetWidthyyF">resetWidth()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Resets the width of the popover&rsquo;s content and <code><a href="../Classes/EnlightenDownView.html">EnlightenDownView</a></code> to the original maximum width.</p>
+
+<p>Used during a Markdown string update.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">resetWidth</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A7PopoverC9sizeToFityyF"></a>
+                    <a name="//apple_ref/swift/Method/sizeToFit()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A7PopoverC9sizeToFityyF">sizeToFit()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Resizes the popover&rsquo;s content size so that it is the minimum size needed to contain its <code><a href="../Classes/EnlightenDownView.html">EnlightenDownView</a></code>.</p>
+
+<p>If the <code><a href="../Classes/EnlightenPopover.html#/s:9Enlighten0A7PopoverC11fitInWindowSbvp">fitInWindow</a></code> property is true, this method will attempt to fit the <code><a href="../Classes/EnlightenDownView.html">EnlightenDownView</a></code> within the
+window frame.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">sizeToFit</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A7PopoverC21updatePositionIfShown2toySo6CGRectV_tF"></a>
+                    <a name="//apple_ref/swift/Method/updatePositionIfShown(to:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A7PopoverC21updatePositionIfShown2toySo6CGRectV_tF">updatePositionIfShown(to:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates the positioning rectangle of a shown popover.</p>
+
+<p>Note: The popover&rsquo;s position only needs to be updated programmatically if <code><a href="../Classes/EnlightenPopover.html#/s:9Enlighten0A7PopoverC4show10relativeTo2in13preferredEdgeySo6CGRectV_So6NSViewCSo06NSRectH0VtF">show(relativeTo:in:preferredEdge:)</a></code>
+was used to present the popover.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">updatePositionIfShown</span><span class="p">(</span><span class="n">to</span> <span class="nv">positioningRect</span><span class="p">:</span> <span class="kt">NSRect</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>positioningRect</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The new positioning rectangle for the popover.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Presentation%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Presentation Methods" class="dashAnchor"></a>
+                <a href="#/Presentation%20Methods">
+                  <h3 class="section-name">Presentation Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A7PopoverC04showB8IfNeededyyF"></a>
+                    <a name="//apple_ref/swift/Method/showPopoverIfNeeded()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A7PopoverC04showB8IfNeededyyF">showPopoverIfNeeded()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Presents the popover if needed.</p>
+
+<p>This is determined by the <code>needsToShowPopover</code> property and ensures the Markdown has finished loading.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">showPopoverIfNeeded</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A7PopoverC4show10relativeToySo6NSViewC_tF"></a>
+                    <a name="//apple_ref/swift/Method/show(relativeTo:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A7PopoverC4show10relativeToySo6NSViewC_tF">show(relativeTo:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Shows the popover anchored to the specified view. Uses a heuristic method to determine the best anchoring edge.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">show</span><span class="p">(</span><span class="n">relativeTo</span> <span class="nv">positioningView</span><span class="p">:</span> <span class="kt">NSView</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>positioningView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The anchoring view.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A7PopoverC4show10relativeTo2in13preferredEdgeySo6CGRectV_So6NSViewCSo06NSRectH0VtF"></a>
+                    <a name="//apple_ref/swift/Method/show(relativeTo:in:preferredEdge:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A7PopoverC4show10relativeTo2in13preferredEdgeySo6CGRectV_So6NSViewCSo06NSRectH0VtF">show(relativeTo:in:preferredEdge:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Shows the popover anchored to a positioning frame in a content view.</p>
+
+<p>If the popover&rsquo;s Markdown content is not loaded, will wait for it to finish before showing the popover.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">show</span><span class="p">(</span><span class="n">relativeTo</span> <span class="nv">positioningRectInWindow</span><span class="p">:</span> <span class="kt">NSRect</span><span class="p">,</span> <span class="k">in</span> <span class="nv">contentView</span><span class="p">:</span> <span class="kt">NSView</span><span class="p">,</span> <span class="nv">preferredEdge</span><span class="p">:</span> <span class="kt">NSRectEdge</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>positioningRectInWindow</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The rectangle within <code>contentView</code> relative to which the popover should be
+                     positioned.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>contentView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The window content view relative to which the popover should be positioned.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>preferredEdge</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The edge of <code>positioningRectInWindow</code> the popover should prefer to be anchored to.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A7PopoverC10showLoaded10relativeTo2of13preferredEdgeySo6CGRectV_So6NSViewCSo06NSRectI0VtF"></a>
+                    <a name="//apple_ref/swift/Method/showLoaded(relativeTo:of:preferredEdge:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A7PopoverC10showLoaded10relativeTo2of13preferredEdgeySo6CGRectV_So6NSViewCSo06NSRectI0VtF">showLoaded(relativeTo:of:preferredEdge:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Shows the popover anchored to the specified view.</p>
+
+<p>Unlike the other presentation methods, this one shows the popover regardless of the popover&rsquo;s content loading
+state .</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">showLoaded</span><span class="p">(</span><span class="n">relativeTo</span> <span class="nv">positioningRect</span><span class="p">:</span> <span class="kt">NSRect</span><span class="p">,</span> <span class="n">of</span> <span class="nv">positioningView</span><span class="p">:</span> <span class="kt">NSView</span><span class="p">,</span> <span class="nv">preferredEdge</span><span class="p">:</span> <span class="kt">NSRectEdge</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>positioningRect</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The rectangle within positioningView relative to which the popover should be positioned.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>positioningView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view relative to which the popover should be positioned.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>preferredEdge</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The edge of positioningView the popover should prefer to be anchored to.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Markdown%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Markdown Methods" class="dashAnchor"></a>
+                <a href="#/Markdown%20Methods">
+                  <h3 class="section-name">Markdown Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A7PopoverC6update14markdownString17shouldCenterAlign11newMaxWidth07waitForB7ClosureySS_Sb12CoreGraphics7CGFloatVSgSbtF"></a>
+                    <a name="//apple_ref/swift/Method/update(markdownString:shouldCenterAlign:newMaxWidth:waitForPopoverClosure:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A7PopoverC6update14markdownString17shouldCenterAlign11newMaxWidth07waitForB7ClosureySS_Sb12CoreGraphics7CGFloatVSgSbtF">update(markdownString:shouldCenterAlign:newMaxWidth:waitForPopoverClosure:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Renders the given CommonMark Markdown string into HTML, updates the <code><a href="../Classes/EnlightenDownView.html">EnlightenDownView</a></code> while keeping the style
+intact, and resizes the popover&rsquo;s content size.</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    <p>Errors thrown during the loading of the Markdown string are passed to the delegate&rsquo;s
+         <code><a href="../Protocols/EnlightenPopoverDelegate.html#/c:@M@Enlighten@objc(pl)EnlightenPopoverDelegate(im)enlightenPopoverFailedToLoadWithDownError:">EnlightenPopoverDelegate.enlightenPopoverFailedToLoad(downError:)</a></code> method.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">update</span><span class="p">(</span><span class="nv">markdownString</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                 <span class="nv">shouldCenterAlign</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
+                 <span class="nv">newMaxWidth</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                 <span class="nv">waitForPopoverClosure</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>markdownString</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A string containing CommonMark Markdown.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>shouldCenterAlign</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether the Markdown content should be center aligned.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>newMaxWidth</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The new max width of the popover.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>waitForPopoverClosure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether to wait for the popover to close before updating.
+                   The default value is <code>false</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Helper%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Helper Methods" class="dashAnchor"></a>
+                <a href="#/Helper%20Methods">
+                  <h3 class="section-name">Helper Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Enlighten0A7PopoverC8bestEdge3forSo06NSRectD0VSo6NSViewC_tF"></a>
+                    <a name="//apple_ref/swift/Method/bestEdge(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Enlighten0A7PopoverC8bestEdge3forSo06NSRectD0VSo6NSViewC_tF">bestEdge(for:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A heuristic method for determining the best anchor edge for a view.</p>
+
+<p>The window quadrant the view is located in is used to determine the <em>best</em> edge.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">bestEdge</span><span class="p">(</span><span class="k">for</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">NSView</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">NSRectEdge</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The anchoring view.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The best anchoring edge for the view.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Popover%20Delegate%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Popover Delegate Methods" class="dashAnchor"></a>
+                <a href="#/Popover%20Delegate%20Methods">
+                  <h3 class="section-name">Popover Delegate Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Enlighten@objc(cs)EnlightenPopover(im)popoverShouldDetach:"></a>
+                    <a name="//apple_ref/swift/Method/popoverShouldDetach(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Enlighten@objc(cs)EnlightenPopover(im)popoverShouldDetach:">popoverShouldDetach(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">popoverShouldDetach</span><span class="p">(</span><span class="n">_</span> <span class="nv">popover</span><span class="p">:</span> <span class="kt">NSPopover</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Enlighten@objc(cs)EnlightenPopover(im)popoverWillShow:"></a>
+                    <a name="//apple_ref/swift/Method/popoverWillShow(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Enlighten@objc(cs)EnlightenPopover(im)popoverWillShow:">popoverWillShow(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">popoverWillShow</span><span class="p">(</span><span class="n">_</span> <span class="nv">notification</span><span class="p">:</span> <span class="kt">Notification</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Enlighten@objc(cs)EnlightenPopover(im)popoverDidClose:"></a>
+                    <a name="//apple_ref/swift/Method/popoverDidClose(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Enlighten@objc(cs)EnlightenPopover(im)popoverDidClose:">popoverDidClose(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">popoverDidClose</span><span class="p">(</span><span class="n">_</span> <span class="nv">notification</span><span class="p">:</span> <span class="kt">Notification</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Overridden%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Overridden Methods" class="dashAnchor"></a>
+                <a href="#/Overridden%20Methods">
+                  <h3 class="section-name">Overridden Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Enlighten@objc(cs)EnlightenPopover(im)showRelativeToRect:ofView:preferredEdge:"></a>
+                    <a name="//apple_ref/swift/Method/show(relativeTo:of:preferredEdge:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Enlighten@objc(cs)EnlightenPopover(im)showRelativeToRect:ofView:preferredEdge:">show(relativeTo:of:preferredEdge:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Shows the popover anchored to the specified view.</p>
+
+<p>If the popover&rsquo;s Markdown content is not loaded, will wait for it to finish before showing the popover.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">show</span><span class="p">(</span><span class="n">relativeTo</span> <span class="nv">positioningRect</span><span class="p">:</span> <span class="kt">NSRect</span><span class="p">,</span> <span class="n">of</span> <span class="nv">positioningView</span><span class="p">:</span> <span class="kt">NSView</span><span class="p">,</span> <span class="nv">preferredEdge</span><span class="p">:</span> <span class="kt">NSRectEdge</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>positioningRect</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The rectangle within positioningView relative to which the popover should be positioned.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>positioningView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view relative to which the popover should be positioned.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>preferredEdge</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The edge of positioningView the popover should prefer to be anchored to.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Enlighten@objc(cs)EnlightenPopover(im)close"></a>
+                    <a name="//apple_ref/swift/Method/close()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Enlighten@objc(cs)EnlightenPopover(im)close">close()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">close</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-11-20)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

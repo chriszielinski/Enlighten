@@ -21,7 +21,10 @@ public protocol EnlightenPopoverDelegate: class {
 
     /// Invoked when an Enlighten URL scheme was clicked in the popover.
     ///
+    /// 
+    ///
     /// - Parameter url: The Enlighten URL that was clicked.
+    @available(OSX 10.13, *)
     @objc
     optional func enlightenPopover(didClickEnlighten url: URL)
 }

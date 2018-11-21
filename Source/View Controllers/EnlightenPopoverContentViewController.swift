@@ -67,7 +67,9 @@ open class EnlightenPopoverContentViewController: NSViewController {
         view.setContentHuggingPriority(.required, for: .horizontal)
 
         let configuration = WKWebViewConfiguration()
-        configuration.setURLSchemeHandler(self, forURLScheme: Constants.urlScheme)
+        if #available(OSX 10.13, *) {
+            configuration.setURLSchemeHandler(self, forURLScheme: Constants.urlScheme)
+        }
 
         view = try EnlightenDownView(frame: NSRect(origin: .zero, size: CGSize(width: maxWidth, height: 0)),
                                      markdownString: markdownString,
@@ -188,6 +190,7 @@ open class EnlightenPopoverContentViewController: NSViewController {
 
 // MARK: - URL Scheme Handler Methods
 
+@available(OSX 10.13, *)
 extension EnlightenPopoverContentViewController: WKURLSchemeHandler {
     public func webView(_ webView: WKWebView, start urlSchemeTask: WKURLSchemeTask) {
         // Note: Since the URL isn't actually loading a resource, we fail with an irrelevant error.

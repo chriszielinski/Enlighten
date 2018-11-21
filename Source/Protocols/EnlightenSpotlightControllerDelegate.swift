@@ -32,8 +32,8 @@ public protocol EnlightenSpotlightControllerDelegate: class {
     /// If the delegate does not implement this method or returns nil, the spotlight stage is skipped.
     ///
     /// - Note: This delegate method should not be necessary if appropriate testing procedures are employed to ensure
-    ///         that all Markdown strings can be loaded (i.e. `EnlightenSpotlightController.validateMarkdownStrings()`
-    ///         testing method).
+    ///         that all Markdown strings load successfully (i.e.
+    ///         `EnlightenSpotlightController.validateMarkdownStrings()` testing method).
     ///
     /// - Parameters:
     ///   - markdownString: The Markdown string that failed to load.

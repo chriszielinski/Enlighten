@@ -203,9 +203,14 @@ open class EnlightenDownView: DownView {
 
     /// Sets the CSS color scheme according to the receiver's effective appearance.
     open func setPreferredColorScheme() {
-        let method: Constants.Javascript.Method = effectiveAppearance.name.isDark
-            ? .switchToDarkMode
-            : .switchToLightMode
+        let method: Constants.Javascript.Method
+        if #available(OSX 10.14, *) {
+            method = effectiveAppearance.name.isDark
+                ? .switchToDarkMode
+                : .switchToLightMode
+        } else {
+            method = .switchToLightMode
+        }
         evaluateJavaScript(method: method)
     }
 

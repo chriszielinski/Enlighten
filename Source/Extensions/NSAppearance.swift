@@ -10,6 +10,7 @@ import Cocoa
 
 extension NSAppearance.Name {
     /// Whether the receiver is a dark system appearance.
+    @available(OSX 10.14, *)
     var isDark: Bool {
         switch self {
         case .darkAqua, .vibrantDark, .accessibilityHighContrastDarkAqua, .accessibilityHighContrastVibrantDark:

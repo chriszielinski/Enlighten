@@ -13,7 +13,7 @@ class ViewController: NSViewController {
     /// Keys that define the presentation order of the keyed spotlight controller's irises. The keys can also be used for identification purposes.
     ///
     /// The order of the keys' declarations corresponds directly to their presentation order (i.e. the iris with the `.presentButton` presentation order key will be first, followed by `.customView`...).
-    enum SpotlightKeys: String, EnlightenSpotlightControllerKeys {
+    enum SpotlightKey: String, EnlightenSpotlightControllerKeys {
         // The controller will begin with the iris that corresponds to this key.
         case presentButton
         case customView
@@ -37,7 +37,7 @@ class ViewController: NSViewController {
     @IBOutlet var textView: NSTextView!
     @IBOutlet var customView: CustomView!
 
-    var keyedSpotlightController: EnlightenKeyedSpotlightController<SpotlightKeys>!
+    var keyedSpotlightController: EnlightenKeyedSpotlightController<SpotlightKey>!
 
     /// The Markdown string for the help button's main page.
     let helpButtonMainPageMarkdown = """
@@ -81,8 +81,8 @@ class ViewController: NSViewController {
     ///
     /// For didactic purposes, the demo will use the latter; although, the former would work in this case as well.
     func setupSpotlightController() {
-        /// Create a keyed spotlight controller using the `SpotlightKeys` enum to specify the presentation order.
-        keyedSpotlightController = EnlightenKeyedSpotlightController(keys: SpotlightKeys.self)
+        /// Create a keyed spotlight controller using the `SpotlightKey` enum to specify the presentation order.
+        keyedSpotlightController = EnlightenKeyedSpotlightController(keys: SpotlightKey.self)
         /// Set the delegate to ourselves.
         keyedSpotlightController.delegate = self
 
@@ -93,7 +93,7 @@ class ViewController: NSViewController {
         // MARK: 'Uses Profile Spot' Button Iris
 
         /// Create a keyed iris for the 'Uses Profile Spot' check button with a Markdown string.
-        let usesProfileSpotButtonIris = EnlightenKeyedIris(presentationOrderKey: SpotlightKeys.usesProfileSpotButton,
+        let usesProfileSpotButtonIris = EnlightenKeyedIris(presentationOrderKey: SpotlightKey.usesProfileSpotButton,
                                                            view: usesProfileSpotButton,
                                                            markdownString: usesProfileSpotMarkdown)
 
@@ -202,7 +202,7 @@ class ViewController: NSViewController {
 
         // MARK: 'Present' Push Button Iris
 
-        /// Even though this is the last iris we're adding to the controller, it will be the first one presented because it is the first enumeration case in our `SpotlightKeys` enum—which specifies the presentation order.
+        /// Even though this is the last iris we're adding to the controller, it will be the first one presented because it is the first enumeration case in our `SpotlightKey` enum—which specifies the presentation order.
         let presentButtonIris = try! keyedSpotlightController.addSpotlight(presentationOrderKey: .presentButton,
                                                                            view: presentButton,
                                                                            markdownFilename: "introduction",
@@ -317,7 +317,7 @@ extension ViewController: EnlightenSpotlightControllerDelegate {
     func spotlightControllerWillShow(stage: Int,
                                      in iris: EnlightenIris,
                                      navigating: EnlightenSpotlightController.NavigationDirection) {
-        guard let keyedIris = iris as? EnlightenKeyedIris<SpotlightKeys>
+        guard let keyedIris = iris as? EnlightenKeyedIris<SpotlightKey>
             else { return }
         print("Navigating \(navigating) will show stage \(stage) in \(keyedIris.presentationOrderKey)")
     }

@@ -233,7 +233,12 @@ open class EnlightenSpotlightController: NSViewController {
     override open func viewWillLayout() {
         super.viewWillLayout()
 
-        skipButton.appearance = NSAppearance(named: NSAppearance.Name.darkAqua)!
+        if #available(OSX 10.14, *) {
+            skipButton.appearance = NSAppearance(named: .darkAqua)!
+        } else {
+            // Fallback on earlier versions
+            skipButton.appearance = NSAppearance(named: .vibrantDark)!
+        }
         imageMaskView.backgroundColor = backgroundColor
         animatableSpotlightView.spotlightBackgroundColor = backgroundColor
     }

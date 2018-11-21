@@ -47,16 +47,19 @@ Installation
 ============
 `Enlighten` is available for installation using CocoaPods or Carthage.
 
-### Using [CocoaPods](http://cocoapods.org/)
-
-```ruby
-pod "Enlighten"
-```
 
 ### Using [Carthage](https://github.com/Carthage/Carthage)
 
 ```ruby
 github "chriszielinski/Enlighten"
+```
+
+### ~~Using [CocoaPods](http://cocoapods.org/)~~
+
+> ☠️ **Warning:** CocoaPods not currently supported.
+
+```ruby
+pod "Enlighten"
 ```
 
 Requirements

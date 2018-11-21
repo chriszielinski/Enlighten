@@ -160,14 +160,14 @@
         <img alt="GitHub license" src ="https://img.shields.io/badge/license-MIT-blue.svg"/>
     </a>
     <br>
-    <img src ="./readme-assets/gifs/enlighten.gif"/>
+    <img src ="https://raw.githubusercontent.com/chriszielinski/Enlighten/master/readme-assets/gifs/enlighten.gif"/>
     <br>
     <br>
     <b>An integrated spotlight-based onboarding and help library for macOS, written in Swift.</b>
     <br>
 </p>
 
-<p>&ndash;</p>
+<hr>
 <h3 id='looking-for' class='heading'>Looking for&hellip;</h3>
 
 <ul>
@@ -183,9 +183,7 @@
 <li>[x] Dark mode ready.</li>
 </ul>
 
-<blockquote>
-<p><img src="./readme-assets/pngs/light-dark-mode.png" alt="Light Dark Mode Supported" width="300"></p>
-</blockquote>
+<p><img src="https://raw.githubusercontent.com/chriszielinski/Enlighten/master/readme-assets/pngs/light-dark-mode.png" alt="Light Dark Mode Supported" width="400"></p>
 <h1 id='installation' class='heading'>Installation</h1>
 
 <p><code>Enlighten</code> is available for installation using CocoaPods or Carthage.</p>
@@ -205,17 +203,16 @@
 <ul>
 <li><strong>Stage</strong> — A single <q>step</q> in the onboarding spotlight presentation. It consists of a Markdown string rendered inside the popover.</li>
 <li><strong>Iris</strong> — A class that encapsulates the behavior of the spotlight for a particular view. It encapsulates at least one stage; optionally, more. All the stages of the iris share the iris&rsquo; configuration, unless they override the appropriate property (e.g. the <code>popoverMaxWidth</code> property). The focus/unfocus animation groups/methods are invoked upon presenting the iris&rsquo; first stage and leaving the iris&rsquo; last stage, respectively.</li>
-<li><p><strong>Followspot</strong> — A <em>wider</em>, more encompassing spotlight used during the animated transitioning from one view (or iris) to the next.</p>
-
-<blockquote>
-<p><img src="./readme-assets/pngs/followspot.png" alt="Followspot" width="250"></p>
-</blockquote></li>
-<li><p><strong>Profile Spot</strong> — A <em>tighter</em>, <q>smaller</q>, focused spotlight used to draw attention to a particular view (or iris).</p>
-
-<blockquote>
-<p><img src="./readme-assets/pngs/profile-spot.png" alt="Profile Spot" width="250"></p>
-</blockquote></li>
+<li><strong>Followspot</strong> — A <em>wider</em>, more encompassing spotlight used during the animated transitioning from one view (or iris) to the next.</li>
 </ul>
+
+<p><img src="https://raw.githubusercontent.com/chriszielinski/Enlighten/master/readme-assets/pngs/followspot.png" alt="Followspot" width="300"></p>
+
+<ul>
+<li><strong>Profile Spot</strong> — A <em>tighter</em>, <q>smaller</q>, focused spotlight used to draw attention to a particular view (or iris).</li>
+</ul>
+
+<p><img src="https://raw.githubusercontent.com/chriszielinski/Enlighten/master/readme-assets/pngs/profile-spot.png" alt="Profile Spot" width="300"></p>
 <h1 id='components' class='heading'>Components</h1>
 
 <p>The demo project provides a comprehensive, documentented example of how to integrate and configure the various components of the <code>Enlighten</code> library.</p>
@@ -317,25 +314,19 @@
 <li><code>.circle</code> (default)</li>
 </ul>
 
-<blockquote>
-<p><img src="./readme-assets/gifs/profile-spot-circle.gif" alt=".circle Followspot Shape" height="200"></p>
-</blockquote>
+<p><img src="https://raw.githubusercontent.com/chriszielinski/Enlighten/master/readme-assets/gifs/profile-spot-circle.gif" alt=".circle Followspot Shape" height="200"></p>
 
 <ul>
 <li><code>.none</code></li>
 </ul>
 
-<blockquote>
-<p><img src="./readme-assets/gifs/profile-spot-none.gif" alt=".none Followspot Shape" height="200"></p>
-</blockquote>
+<p><img src="https://raw.githubusercontent.com/chriszielinski/Enlighten/master/readme-assets/gifs/profile-spot-none.gif" alt=".none Followspot Shape" height="200"></p>
 
 <ul>
 <li><code>.ellipse</code></li>
 </ul>
 
-<blockquote>
-<p><img src="./readme-assets/gifs/profile-spot-ellipse.gif" alt=".ellipse Followspot Shape" height="200"></p>
-</blockquote>
+<p><img src="https://raw.githubusercontent.com/chriszielinski/Enlighten/master/readme-assets/gifs/profile-spot-ellipse.gif" alt=".ellipse Followspot Shape" height="200"></p>
 <h3 id='uses-profile-spot' class='heading'>Uses Profile Spot</h3>
 
 <p>When using a circle or ellipse <em>followspot</em>, the <em>profile spot</em> is optional. You can specify your preference by setting the controller&rsquo;s <code>usesProfileSpot</code> property. It has a default value of <code>true</code>. </p>
@@ -343,7 +334,7 @@
 <p>A <code>.circle</code> <em>followspot</em> with no <em>profile spot</em> looks like so:</p>
 
 <div style="text-align:center;">
-    <img src="./readme-assets/gifs/no-profile-spot-circle.gif" alt="Circle Followspot with no Profile Spot" width="500">
+    <img src="https://raw.githubusercontent.com/chriszielinski/Enlighten/master/readme-assets/gifs/no-profile-spot-circle.gif" alt="Circle Followspot with no Profile Spot" width="500">
 </div>
 <h3 id='delegate' class='heading'>Delegate</h3>
 
@@ -374,8 +365,11 @@
 <p>There are two ways to create an <code><a href="Classes/EnlightenHelpButton.html">EnlightenHelpButton</a></code>: Interface Builder, or programmatically. The demo uses a multi-page <code><a href="Classes/EnlightenHelpButton.html">EnlightenHelpButton</a></code> created in the Interface Builder.</p>
 
 <div style="text-align:center;">
-    <img src="./readme-assets/gifs/enlighten-help-button.gif" alt="Enlighten Help Button" width="500">
+    <img src="https://raw.githubusercontent.com/chriszielinski/Enlighten/master/readme-assets/gifs/enlighten-help-button.gif" alt="Enlighten Help Button" width="500">
 </div>
+
+<p><br>
+<br></p>
 
 <p>Programmatically, it would look something like this.</p>
 
@@ -413,8 +407,11 @@
 </blockquote>
 
 <div style="text-align:center;">
-    <img src="./readme-assets/pngs/tooltip.png" alt="Enlighten Tooltip" width="500">
+    <img src="https://raw.githubusercontent.com/chriszielinski/Enlighten/master/readme-assets/pngs/tooltip.png" alt="Enlighten Tooltip" width="500">
 </div>
+
+<p><br>
+<br></p>
 
 <p>You can set a <code>NSView</code>&lsquo;s tooltip from a Markdown string as so:</p>
 

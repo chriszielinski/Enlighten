@@ -18,14 +18,14 @@ Enlighten 💡
 		<img alt="GitHub license" src ="https://img.shields.io/badge/license-MIT-blue.svg"/>
 	</a>
 	<br>
-	<img src ="./readme-assets/gifs/enlighten.gif"/>
+	<img src ="https://raw.githubusercontent.com/chriszielinski/Enlighten/master/readme-assets/gifs/enlighten.gif"/>
 	<br>
 	<br>
 	<b>An integrated spotlight-based onboarding and help library for macOS, written in Swift.</b>
 	<br>
 </p>
 
---
+---
 
 ### Looking for...
 - A Floating Action Button for macOS? Check out [Fab.](https://github.com/chriszielinski/Fab) 🛍️.
@@ -39,8 +39,8 @@ Features
 - [x] A help button that presents a popover with app-specific help documentation rendered from CommonMark Markdown strings/files.
 - [x] Use a CommonMark Markdown string/file as a tooltip.
 - [x] Dark mode ready.
-  
-  > <img src="./readme-assets/pngs/light-dark-mode.png" alt="Light Dark Mode Supported" width="300">
+
+  <img src="https://raw.githubusercontent.com/chriszielinski/Enlighten/master/readme-assets/pngs/light-dark-mode.png" alt="Light Dark Mode Supported" width="400">
 
 
 Installation
@@ -68,13 +68,15 @@ Requirements
 Terminology
 ===========
 
- * **Stage** — A single "step" in the onboarding spotlight presentation. It consists of a Markdown string rendered inside the popover.
- * **Iris** — A class that encapsulates the behavior of the spotlight for a particular view. It encapsulates at least one stage; optionally, more. All the stages of the iris share the iris' configuration, unless they override the appropriate property (e.g. the `popoverMaxWidth` property). The focus/unfocus animation groups/methods are invoked upon presenting the iris' first stage and leaving the iris' last stage, respectively.
- * **Followspot** — A _wider_, more encompassing spotlight used during the animated transitioning from one view (or iris) to the next.
-  > <img src="./readme-assets/pngs/followspot.png" alt="Followspot" width="250">
+* **Stage** — A single "step" in the onboarding spotlight presentation. It consists of a Markdown string rendered inside the popover.
+* **Iris** — A class that encapsulates the behavior of the spotlight for a particular view. It encapsulates at least one stage; optionally, more. All the stages of the iris share the iris' configuration, unless they override the appropriate property (e.g. the `popoverMaxWidth` property). The focus/unfocus animation groups/methods are invoked upon presenting the iris' first stage and leaving the iris' last stage, respectively.
+* **Followspot** — A _wider_, more encompassing spotlight used during the animated transitioning from one view (or iris) to the next.
+
+  <img src="https://raw.githubusercontent.com/chriszielinski/Enlighten/master/readme-assets/pngs/followspot.png" alt="Followspot" width="300">
  	
- * **Profile Spot** — A _tighter_, "smaller", focused spotlight used to draw attention to a particular view (or iris).
-  > <img src="./readme-assets/pngs/profile-spot.png" alt="Profile Spot" width="250">
+* **Profile Spot** — A _tighter_, "smaller", focused spotlight used to draw attention to a particular view (or iris).
+  
+  <img src="https://raw.githubusercontent.com/chriszielinski/Enlighten/master/readme-assets/pngs/profile-spot.png" alt="Profile Spot" width="300">
 
 
 Components
@@ -183,16 +185,15 @@ The _followspot_ shape can be set to the following values:
 
 * `.circle` (default)
 
- > <img src="./readme-assets/gifs/profile-spot-circle.gif" alt=".circle Followspot Shape" height="200">
-
+  <img src="https://raw.githubusercontent.com/chriszielinski/Enlighten/master/readme-assets/gifs/profile-spot-circle.gif" alt=".circle Followspot Shape" height="200">
 
 * `.none`
 
- > <img src="./readme-assets/gifs/profile-spot-none.gif" alt=".none Followspot Shape" height="200">
+  <img src="https://raw.githubusercontent.com/chriszielinski/Enlighten/master/readme-assets/gifs/profile-spot-none.gif" alt=".none Followspot Shape" height="200">
 
 * `.ellipse`
 
- > <img src="./readme-assets/gifs/profile-spot-ellipse.gif" alt=".ellipse Followspot Shape" height="200">
+  <img src="https://raw.githubusercontent.com/chriszielinski/Enlighten/master/readme-assets/gifs/profile-spot-ellipse.gif" alt=".ellipse Followspot Shape" height="200">
 
 ### Uses Profile Spot
 
@@ -200,7 +201,7 @@ When using a circle or ellipse _followspot_, the _profile spot_ is optional. You
 
 A `.circle` _followspot_ with no _profile spot_ looks like so:
 <div style="text-align:center;">
-	<img src="./readme-assets/gifs/no-profile-spot-circle.gif" alt="Circle Followspot with no Profile Spot" width="500">
+	<img src="https://raw.githubusercontent.com/chriszielinski/Enlighten/master/readme-assets/gifs/no-profile-spot-circle.gif" alt="Circle Followspot with no Profile Spot" width="500">
 </div>
 
 ### Delegate
@@ -239,8 +240,10 @@ A help button that displays a popover with app-specific help documentation rende
 There are two ways to create an `EnlightenHelpButton`: Interface Builder, or programmatically. The demo uses a multi-page `EnlightenHelpButton` created in the Interface Builder.
 
 <div style="text-align:center;">
-	<img src="./readme-assets/gifs/enlighten-help-button.gif" alt="Enlighten Help Button" width="500">
+	<img src="https://raw.githubusercontent.com/chriszielinski/Enlighten/master/readme-assets/gifs/enlighten-help-button.gif" alt="Enlighten Help Button" width="500">
 </div>
+<br>
+<br>
 
 Programmatically, it would look something like this.
 
@@ -284,8 +287,10 @@ It may be useful to craft your spotlight controller stages' Markdown content in 
 > 🔥 Kill two birds with one stone.
 
 <div style="text-align:center;">
-	<img src="./readme-assets/pngs/tooltip.png" alt="Enlighten Tooltip" width="500">
+	<img src="https://raw.githubusercontent.com/chriszielinski/Enlighten/master/readme-assets/pngs/tooltip.png" alt="Enlighten Tooltip" width="500">
 </div>
+<br>
+<br>
 
 You can set a `NSView`'s tooltip from a Markdown string as so:
 

@@ -54,9 +54,7 @@ Installation
 github "chriszielinski/Enlighten"
 ```
 
-### ~~Using [CocoaPods](http://cocoapods.org/)~~
-
-> ☠️ **Warning:** CocoaPods not currently supported.
+### Using [CocoaPods](http://cocoapods.org/)
 
 ```ruby
 pod "Enlighten"

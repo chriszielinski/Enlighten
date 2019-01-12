@@ -329,7 +329,7 @@ Community
 =========
 
 - Found a bug? Open an [issue](https://github.com/chriszielinski/enlighten/issues).
-- Feature idea? ~~Open an [issue](https://github.com/chriszielinski/player/issues).~~ Do it yourself & PR when done 😅 (or you can open an issue 🙄).
+- Feature idea? ~~Open an [issue](https://github.com/chriszielinski/enlighten/issues).~~ Do it yourself & PR when done 😅 (or you can open an issue 🙄).
 - Want to contribute? Submit a [pull request](https://github.com/chriszielinski/enlighten/pulls).
 
 

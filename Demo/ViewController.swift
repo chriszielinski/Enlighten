@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+
 import Enlighten
 
 class ViewController: NSViewController {
@@ -82,7 +83,8 @@ class ViewController: NSViewController {
     /// For didactic purposes, the demo will use the latter; although, the former would work in this case as well.
     func setupSpotlightController() {
         /// Create a keyed spotlight controller using the `SpotlightKey` enum to specify the presentation order.
-        keyedSpotlightController = EnlightenKeyedSpotlightController(keys: SpotlightKey.self)
+        keyedSpotlightController = EnlightenKeyedSpotlightController(keys: SpotlightKey.self,
+                                                                     markdownOptions: .unsafe)
         /// Set the delegate to ourselves.
         keyedSpotlightController.delegate = self
 
@@ -237,7 +239,7 @@ class ViewController: NSViewController {
         // Set the popover delegate to ourself. The popover will notify the delegate (us) when/if the Markdown string fails to load, and when a Enlighten URL was clicked.
         enlightenHelpButton.enlightenPopoverDelegate = self
         // Set the Markdown string in the help button's popover.
-        enlightenHelpButton.update(markdownString: helpButtonMainPageMarkdown)
+        enlightenHelpButton.update(markdownString: helpButtonMainPageMarkdown, options: .unsafe)
         // The help button's tooltip Markdown content.
         let helpButtonToolTip = """
             # Need help?

@@ -25,7 +25,7 @@ open class EnlightenDownView: DownView {
     ///
     /// If the Markdown content exceeds this height, scrolling is enabled.
     public var maxHeight: CGFloat = 500 {
-        didSet { frame.size.height = maxHeight }
+        didSet { frame.size.height = resolvedMaxHeight }
     }
     /// The minimum height the view can be.
     ///
@@ -43,7 +43,7 @@ open class EnlightenDownView: DownView {
     }
     /// Whether the final width of the HTML document has been determined.
     @objc
-    dynamic public var isFinalWidth: Bool = false
+    dynamic open var isFinalWidth: Bool = false
 
     // MARK: Private Stored Properties
 
@@ -53,10 +53,17 @@ open class EnlightenDownView: DownView {
     private var cachedWidestElementWidth: CGFloat?
     /// The latest content size constrained to the minimum and maximum size requirements.
     private var cachedContentSize: NSSize = .zero
+    private var isHandlingMouseDownEvent: Bool = false
+    private var verticalContentInset: CGFloat = 0 {
+        didSet { cachedContentSize.height -= (oldValue - verticalContentInset) }
+    }
 
     // MARK: Overridden Properties
 
     override open var intrinsicContentSize: NSSize {
+        guard cachedContentSize != .zero
+            else { return NSSize(width: frame.width, height: minHeight) }
+
         return cachedContentSize
     }
 
@@ -67,6 +74,7 @@ open class EnlightenDownView: DownView {
                          openLinksInBrowser: Bool,
                          templateBundle: Bundle? = nil,
                          configuration: WKWebViewConfiguration?,
+                         options: EnlightenMarkdownOptions = .default,
                          didLoadSuccessfully: DownViewClosure?) throws {
         maxWidth = frame.width
         var bundle = templateBundle
@@ -82,7 +90,13 @@ open class EnlightenDownView: DownView {
                        openLinksInBrowser: openLinksInBrowser,
                        templateBundle: bundle,
                        configuration: configuration,
+                       options: options,
                        didLoadSuccessfully: didLoadSuccessfully)
+
+        if #available(macOS 10.15, *) {
+            isHorizontalContentSizeConstraintActive = false
+            isVerticalContentSizeConstraintActive = false
+        }
 
         setValue(false, forKey: "drawsBackground")
     }
@@ -93,14 +107,29 @@ open class EnlightenDownView: DownView {
 
     // MARK: - Layout Methods
 
+    var resolvedMaxHeight: CGFloat {
+        return verticalContentInset + maxHeight
+    }
+
+    open override func setFrameSize(_ newSize: NSSize) {
+        if cachedContentSize != .zero {
+            super.setFrameSize(cachedContentSize)
+            subviews.first?.setFrameSize(cachedContentSize)
+            return
+        }
+
+        super.setFrameSize(newSize)
+    }
+
     /// Resets the size of the view to the maximum.
     ///
     /// - Parameter includingHeight: Whether to also reset the height to the maximum.
     func resetMaxSize(includingHeight: Bool = true) {
         cachedWidestElementWidth = nil
-        let height = includingHeight ? maxHeight : frame.height
+        let height = includingHeight ? resolvedMaxHeight : frame.height
         cachedContentSize = NSSize(width: maxWidth, height: height)
-        frame.size = cachedContentSize
+
+        setFrameSize(cachedContentSize)
     }
 
     /// Resizes the view to fit the cached content size.
@@ -110,10 +139,10 @@ open class EnlightenDownView: DownView {
         guard cachedContentSize != .zero
             else { return }
 
-        frame.size.height = cachedContentSize.height
-
         if includingWidth {
-            frame.size.width = cachedContentSize.width
+            setFrameSize(cachedContentSize)
+        } else {
+            frame.size.height = cachedContentSize.height
         }
     }
 
@@ -124,6 +153,9 @@ open class EnlightenDownView: DownView {
     ///
     /// This method updates the values of the `cachedContentSize` and `isFinalWidth` properties.
     open func computeContentSize() {
+        guard !isHandlingMouseDownEvent
+            else { return }
+
         htmlScrollSize { [weak self] (size) in
             guard let downView = self
                 else { return }
@@ -135,13 +167,13 @@ open class EnlightenDownView: DownView {
             print("[EnlightenDownView.\(#function)] WKWebView Scroll Size: \(scrollSize)")
             #endif
 
-            if scrollSize.height <= downView.maxHeight {
+            if scrollSize.height <= downView.resolvedMaxHeight {
                 downView.isScrollingEnabled = false
             } else {
                 downView.isScrollingEnabled = true
             }
 
-            scrollSize.height = min(downView.maxHeight, max(downView.minHeight, scrollSize.height))
+            scrollSize.height = min(downView.resolvedMaxHeight, max(downView.minHeight, scrollSize.height))
 
             var needsToSetIsFinalWidth = false
             if downView.isFinalWidth {
@@ -181,11 +213,19 @@ open class EnlightenDownView: DownView {
 
     /// Sets the document body’s `margin-top` CSS property to a specified px value.
     open func setBodyTopMargin(to pxValue: CGFloat) {
+        if verticalContentInset == 0 {
+            verticalContentInset = pxValue / 2
+        }
+
         evaluateJavaScript(Constants.Javascript.script(bodyTopMargin: pxValue))
     }
 
     /// Removes any previous values set by `setBodyTopMargin(to:)`.
     open func resetBodyTopMargin() {
+        if verticalContentInset != 0 {
+            verticalContentInset = 0
+        }
+
         evaluateJavaScript(Constants.Javascript.script(bodyTopMargin: nil))
     }
 
@@ -258,6 +298,9 @@ open class EnlightenDownView: DownView {
     override open func layout() {
         super.layout()
 
+        guard !isHandlingMouseDownEvent
+            else { return }
+
         setPreferredColorScheme()
         setBodyTextAlignProperty()
         cacheWidthOfWidestElement()
@@ -267,6 +310,9 @@ open class EnlightenDownView: DownView {
     // MARK: Responder Methods
 
     override open func mouseDown(with event: NSEvent) {
+        isHandlingMouseDownEvent = true
+        defer { isHandlingMouseDownEvent = false }
+
         // Because this is a web view, we need to use some black magic to distinguish text selection from a window
         // drag (or anything else). We use the cursor to do this.
         // If it's an I-beam cursor, we assume text selection; otherwise, a possible window drag and pass it on to the

@@ -8,6 +8,8 @@
 
 import Cocoa
 
+import Down
+
 /// A sizeable, detachable, and fitting, popover that renders a Markdown string.
 open class EnlightenPopover: NSPopover, NSPopoverDelegate {
 
@@ -69,13 +71,13 @@ open class EnlightenPopover: NSPopover, NSPopoverDelegate {
     private var positioningRectInWindow: CGRect = .zero
     /// When non-nil, this property stores the Markdown string used to update the `EnlightenDownView` once the popover
     /// is closed.
-    private var popoverUpdateMarkdownString: String?
+    private var popoverUpdateMarkdown: (EnlightenMarkdownOptions?, String)?
     /// The observation object observing the content view controller's `EnlightenDownView`'s `isWidthFinal` property.
     private var downViewIsWidthFinalObservation: NSKeyValueObservation!
     /// The observation object observing the popover's `isShown` property.
     private var popoverIsShownObservation: NSKeyValueObservation!
-    /// The observation object observing the popover close button's `isHidden` property.
-    private var closeButtonIsHiddenObservation: NSKeyValueObservation?
+    /// The observation object observing the popover close button layer's `opacity` property.
+    private var closeButtonOpacityObservation: NSKeyValueObservation?
 
     // MARK: Private Computed Properties
 
@@ -93,26 +95,31 @@ open class EnlightenPopover: NSPopover, NSPopoverDelegate {
     ///   - maxWidth: The maximum width of the popover.
     ///   - maxHeight: The maximum height of the popover.
     /// - Throws: Throws a `DownErrors` if loading the Markdown string fails.
-    public init(markdownString: String, maxWidth: CGFloat, maxHeight: CGFloat = 500) throws {
+    public init(markdownString: String,
+                options: EnlightenMarkdownOptions = .default,
+                maxWidth: CGFloat,
+                maxHeight: CGFloat = 500) throws {
         self.maxWidth = maxWidth
 
         super.init()
 
         contentViewController = try EnlightenPopoverContentViewController(markdownString: markdownString,
+                                                                          options: options,
                                                                           maxWidth: maxWidth,
                                                                           maxHeight: maxHeight)
         behavior = .transient
-        delegate = self
 
         downViewIsWidthFinalObservation = popoverContentViewController.downView
             .observe(\.isFinalWidth, changeHandler: didChangeIsWidthFinal)
         popoverIsShownObservation = observe(\.isShown, changeHandler: didChangeIsShown)
     }
 
-    public convenience init(maxWidth: CGFloat, maxHeight: CGFloat = 500) {
+    public convenience init(options: EnlightenMarkdownOptions = .default,
+                            maxWidth: CGFloat,
+                            maxHeight: CGFloat = 500) {
         // Note: Will never fail because the Markdown string is empty, so no errors will ever be thrown.
         // swiftlint:disable:next force_try
-        try! self.init(markdownString: "", maxWidth: maxWidth, maxHeight: maxHeight)
+        try! self.init(markdownString: "", options: options, maxWidth: maxWidth, maxHeight: maxHeight)
     }
 
     public required init?(coder: NSCoder) {
@@ -179,6 +186,12 @@ open class EnlightenPopover: NSPopover, NSPopoverDelegate {
         }
 
         contentSize = newSize
+
+        /// Weird sizing behavior arises after numerous consecutive & interrrupted detatch/reattach cycles.
+        /// This will resync the height.
+        DispatchQueue.main.async {
+            self.popoverContentViewController.downView.window?.setContentSize(self.contentSize)
+        }
     }
 
     /// Updates the positioning rectangle of a shown popover.
@@ -283,14 +296,15 @@ open class EnlightenPopover: NSPopover, NSPopoverDelegate {
     ///   - waitForPopoverClosure: Whether to wait for the popover to close before updating.
     ///                            The default value is `false`.
     open func update(markdownString: String,
-                     shouldCenterAlign: Bool = false,
+                     options: EnlightenMarkdownOptions? = nil,
+                     shouldCenterAlign: Bool? = nil,
                      newMaxWidth: CGFloat? = nil,
                      waitForPopoverClosure: Bool = false) {
         var animationDuration: TimeInterval = 0
 
         if waitForPopoverClosure {
             guard !isShown else {
-                popoverUpdateMarkdownString = markdownString
+                popoverUpdateMarkdown = (options, markdownString)
                 setDoesCenterAlignAfterClosing = shouldCenterAlign
                 setMaxWidthAfterClosing = newMaxWidth
                 return
@@ -314,8 +328,11 @@ open class EnlightenPopover: NSPopover, NSPopoverDelegate {
                 self.resetWidth()
             }
 
-            self.doesCenterAlignContent = shouldCenterAlign
-            self.popoverContentViewController.update(markdownString: markdownString)
+            if let shouldCenterAlign = shouldCenterAlign {
+                self.doesCenterAlignContent = shouldCenterAlign
+            }
+
+            self.popoverContentViewController.update(markdownString: markdownString, options: options)
         })
     }
 
@@ -352,14 +369,10 @@ open class EnlightenPopover: NSPopover, NSPopoverDelegate {
     }
 
     open func popoverWillShow(_ notification: Notification) {
-        if closeButtonIsHiddenObservation == nil,
+        if closeButtonOpacityObservation == nil,
             canDetach,
             let closeButton = contentViewController?.view.superview?.value(forKey: "closeButton") as? NSButton {
-            closeButtonIsHiddenObservation = closeButton.observe(\.isHidden) { [weak self] (closeButton, _) in
-                if !closeButton.isHidden {
-                    self?.didShowPopoverCloseButton()
-                }
-            }
+            closeButtonOpacityObservation = closeButton.layer?.observe(\.opacity, changeHandler: didChangeOpacity)
         }
     }
 
@@ -413,16 +426,36 @@ extension EnlightenPopover {
 
     func didChangeIsShown(of popover: EnlightenPopover,
                           observedChange: NSKeyValueObservedChange<Bool>) {
-        if let markdownString = popoverUpdateMarkdownString, !isShown {
-            popoverUpdateMarkdownString = nil
+        if let (options, markdownString) = popoverUpdateMarkdown, !isShown {
+            popoverUpdateMarkdown = nil
             update(markdownString: markdownString,
+                   options: options,
                    shouldCenterAlign: setDoesCenterAlignAfterClosing ?? false,
                    newMaxWidth: setMaxWidthAfterClosing,
                    waitForPopoverClosure: false)
         }
     }
 
-    func didShowPopoverCloseButton() {
-        popoverContentViewController.didDetachFromPopover()
+    func didChangeOpacity(of closeButtonLayer: CALayer,
+                          observedChange: NSKeyValueObservedChange<Float>) {
+        let wasAnimated = animates
+        animates = false
+
+        if closeButtonLayer.opacity == 1 {
+            popoverContentViewController.didDetachFromPopover()
+            sizeToFit()
+            animates = wasAnimated
+        } else {
+            DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(100)) { [weak self] in
+                if closeButtonLayer.opacity == 0 {
+                    self?.popoverContentViewController.didReattachPopover()
+                    self?.sizeToFit()
+                    self?.animates = wasAnimated
+                } else {
+                    /// The layer opacity is being reanimated to a non-zero value, so no need to call
+                    /// `popoverCloseButtonFinished(restoreAnimates:)`.
+                }
+            }
+        }
     }
 }

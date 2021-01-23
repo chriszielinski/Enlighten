@@ -49,11 +49,11 @@ open class EnlightenKeyedSpotlightController<Key: EnlightenSpotlightControllerKe
     ///
     /// - Parameter keys: The type of an enumeration that conforms to the `EnlightenSpotlightControllerKeys` protocol.
     ///                   The keyed irises will be presented in the order of the enumeration cases.
-    public init(keys: Key.Type) {
+    public init(keys: Key.Type, markdownOptions: EnlightenMarkdownOptions = .default) {
         let keyValueTuples = keys.allCases.enumerated().map({ ($0.element, $0.offset) })
         self.presentationOrderKeys = Dictionary(uniqueKeysWithValues: keyValueTuples)
 
-        super.init()
+        super.init(markdownOptions: markdownOptions)
     }
 
     required public init?(coder: NSCoder) {

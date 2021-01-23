@@ -41,6 +41,8 @@ extension NSRectEdge: CustomStringConvertible {
             return "Right (.maxX)"
         case .minY:
             return "Below (.minY)"
+        @unknown default:
+            return "Unknown"
         }
     }
 }

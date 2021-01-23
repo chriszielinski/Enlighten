@@ -8,6 +8,8 @@
 
 import Cocoa
 
+import Down
+
 /// A help button that displays a popover with app-specific help documentation rendered from a
 /// CommonMark Markdown string.
 open class EnlightenHelpButton: NSButton {
@@ -57,7 +59,10 @@ open class EnlightenHelpButton: NSButton {
     ///   - maxWidth: The maximum width of the popover.
     ///   - maxHeight: The maximum height of the popover.
     /// - Throws: Throws a `DownErrors` if loading the Markdown string fails.
-    public init(markdownString: String, maxWidth: CGFloat? = nil, maxHeight: CGFloat? = nil) throws {
+    public init(markdownString: String = "",
+                options: EnlightenMarkdownOptions = .default,
+                maxWidth: CGFloat? = nil,
+                maxHeight: CGFloat? = nil) throws {
         super.init(frame: .zero)
 
         if let width = maxWidth {
@@ -68,7 +73,7 @@ open class EnlightenHelpButton: NSButton {
             popoverMaxHeight = maxHeight
         }
 
-        try commonInit(markdownString: markdownString)
+        try commonInit(markdownString: markdownString, options: options)
     }
 
     required public init?(coder: NSCoder) {
@@ -76,15 +81,17 @@ open class EnlightenHelpButton: NSButton {
 
         // Note: Will never fail because the Markdown string is empty, so no errors will/could ever be thrown.
         // swiftlint:disable:next force_try
-        try! commonInit(markdownString: "")
+        try! commonInit(markdownString: "", options: .default)
     }
 
-    open func commonInit(markdownString: String) throws {
+    open func commonInit(markdownString: String, options: EnlightenMarkdownOptions) throws {
         enlightenPopover = try EnlightenPopover(markdownString: markdownString,
+                                                options: options,
                                                 maxWidth: popoverWidth,
                                                 maxHeight: popoverMaxHeight)
 
         bezelStyle = .helpButton
+        title = ""
         target = self
         action = #selector(helpButtonAction)
     }
@@ -98,8 +105,8 @@ open class EnlightenHelpButton: NSButton {
     ///
     /// - Parameters:
     ///   - markdownString: A string containing CommonMark Markdown.
-    open func update(markdownString: String) {
-        enlightenPopover.update(markdownString: markdownString)
+    open func update(markdownString: String, options: EnlightenMarkdownOptions? = nil) {
+        enlightenPopover.update(markdownString: markdownString, options: options)
     }
 
     /// Updates the popover content from a Markdown file.
@@ -113,9 +120,11 @@ open class EnlightenHelpButton: NSButton {
     /// - Throws: Only throws an error if the Markdown file could not be read. Errors thrown during the loading of the
     ///           Markdown string are passed to the delegate's
     ///           `EnlightenPopoverDelegate.enlightenPopoverFailedToLoad(downError:)` method (i.e. **not** thrown here).
-    open func update(markdownFilename: String, in bundle: Bundle) throws {
+    open func update(markdownFilename: String,
+                     in bundle: Bundle,
+                     options: EnlightenMarkdownOptions? = nil) throws {
         let markdownString = try String(markdownFilename: markdownFilename, in: bundle)
-        enlightenPopover.update(markdownString: markdownString)
+        enlightenPopover.update(markdownString: markdownString, options: options)
     }
 
     // MARK: - Action Methods

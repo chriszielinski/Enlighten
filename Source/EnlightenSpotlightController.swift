@@ -198,14 +198,14 @@ open class EnlightenSpotlightController: NSViewController {
 
     // MARK: - Initializers
 
-    public init() {
+    public init(markdownOptions: EnlightenMarkdownOptions = .default) {
         imageMaskView = ColoredView()
         imageMaskView.autoresizingMask = [.width, .height]
 
         animatableSpotlightView = AnimatableSpotlightView()
         animatableSpotlightView.autoresizingMask = [.width, .height]
 
-        popover = EnlightenPopover(maxWidth: 800)
+        popover = EnlightenPopover(options: markdownOptions, maxWidth: 800)
 
         skipButton = NSButton(image: NSImage(named: NSImage.stopProgressFreestandingTemplateName)!,
                               target: nil,

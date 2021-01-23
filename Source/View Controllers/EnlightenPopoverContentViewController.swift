@@ -56,15 +56,13 @@ open class EnlightenPopoverContentViewController: NSViewController {
     ///   - maxWidth: The maximum width of the `EnlightenDownView`.
     ///   - maxHeight: The maximum height of the `EnlightenDownView`.
     /// - Throws: Throws a `DownErrors` if loading the Markdown string fails.
-    public init(markdownString: String, maxWidth: CGFloat, maxHeight: CGFloat = 500) throws {
+    public init(markdownString: String,
+                options: EnlightenMarkdownOptions = .default,
+                maxWidth: CGFloat,
+                maxHeight: CGFloat = 500) throws {
         progressIndicator = NSProgressIndicator()
 
         super.init(nibName: nil, bundle: nil)
-
-        view = NSView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.setContentHuggingPriority(.required, for: .vertical)
-        view.setContentHuggingPriority(.required, for: .horizontal)
 
         let configuration = WKWebViewConfiguration()
         if #available(OSX 10.13, *) {
@@ -75,6 +73,7 @@ open class EnlightenPopoverContentViewController: NSViewController {
                                      markdownString: markdownString,
                                      openLinksInBrowser: true,
                                      configuration: configuration,
+                                     options: options,
                                      didLoadSuccessfully: didDownViewLoadSuccessfully)
         downView.maxHeight = maxHeight
 
@@ -145,16 +144,18 @@ open class EnlightenPopoverContentViewController: NSViewController {
     ///
     /// - Parameters:
     ///   - markdownString: A string containing CommonMark Markdown.
-    open func update(markdownString: String) {
+    open func update(markdownString: String, options: EnlightenMarkdownOptions? = nil) {
         downView.isFinalWidth = false
 
         delayShowingProgressIndicator()
 
         do {
-            try downView.update(markdownString: markdownString, didLoadSuccessfully: didDownViewLoadSuccessfully)
+            try downView.update(markdownString: markdownString,
+                                options: options,
+                                didLoadSuccessfully: didDownViewLoadSuccessfully)
         } catch {
             if let replacementString = enlightenPopoverDelegate?.enlightenPopoverFailedToLoad?(downError: error) {
-                update(markdownString: replacementString)
+                update(markdownString: replacementString, options: options)
             } else {
                 hideProgressIndicator()
             }
@@ -177,7 +178,11 @@ open class EnlightenPopoverContentViewController: NSViewController {
     open func didDetachFromPopover() {
         isDetachedFromPopover = true
         downView.setBodyTopMargin(to: 23)
-        downView.needsLayout = true
+    }
+
+    open func didReattachPopover() {
+        isDetachedFromPopover = false
+        downView.resetBodyTopMargin()
     }
 
     /// Invoked when the popover did close.

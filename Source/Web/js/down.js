@@ -1,8 +1,15 @@
 hljs.initHighlightingOnLoad();
 
+window.addEventListener('load', (event) => {
+    document.body.style.marginTop='margin-top 0.1s';
+    // Disable right-click context menu.
+    document.body.setAttribute('oncontextmenu', 'event.preventDefault();');
+});
+
 /// Returns the scroll size of the document.
 function htmlScrollSize() {
-    return [document.documentElement.scrollWidth, document.documentElement.scrollHeight];
+    var rect = document.documentElement.getBoundingClientRect();
+    return [rect.width, rect.height];
 }
 
 /// Returns the width of the widest top-level element in the body of the document.
